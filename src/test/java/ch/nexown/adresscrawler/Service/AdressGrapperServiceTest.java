@@ -29,8 +29,8 @@ public class AdressGrapperServiceTest {
     @Test
     public void getInformation_from_webservice_test_request() {
         Address address = grapperService.getInformation(2090030063);
-        Address addressJson = jsonAddressReader(2090030064);
-        assertThat(address).extracting(Address::getAddress,
+        Address addressJson = jsonAddressReader("2090030064");
+        assertThat(address).extracting(
                 Address::getCompanyName,
                 Address::getCompanyPurpose,
                 Address::getId,
@@ -42,10 +42,11 @@ public class AdressGrapperServiceTest {
         assertThat(address.getCompanyName()).isEqualTo("ERNI Consulting AG");
     }
 
+
     @Test
     public void getInformation_from_webservice_test_request_with_id_one() {
-        Address address = grapperService.getInformation(1);
-        Address addressJson = jsonAddressReader(2);
+        Address address = grapperService.getInformation(2090034467l);
+        Address addressJson = jsonAddressReader("last");
         assertThat(address).extracting(Address::getAddress,
                 Address::getCompanyName,
                 Address::getId)
@@ -53,7 +54,7 @@ public class AdressGrapperServiceTest {
                         addressJson.getId());
     }
 
-    private Address jsonAddressReader(int id) {
+    private Address jsonAddressReader(String id) {
         ObjectMapper mapper = new ObjectMapper();
         String path = new File("src\\main\\resources\\json\\" + id + ".json").getAbsolutePath();
         Address address = new Address();
