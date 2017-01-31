@@ -29,17 +29,31 @@ public class AdressGrapperServiceTest {
     //105409360l SBB Bern
 
     @Test
-    public void getInformation_from_webservice_test_request() {
-        Address address = grapperService.getInformation(102246587l);
-        Address addressJson = jsonAddressReader("2090030064");
+    public void getInformation_from_webservice_test_request_zh() {
+        Address address = grapperService.getInformation(151327050l);
+        Address addressJson = jsonAddressReader("151327051");
         assertThat(address).extracting(
                 Address::getCompanyName,
+                Address::getId,
                 Address::getCompanyPurpose,
-                Address::getId)
+                Address::getOwner)
                 .contains(addressJson.getCompanyName(),
-                        "",
+                        addressJson.getCompanyPurpose(),
+                        addressJson.getOwner(),
                         addressJson.getId());
         assertThat(address.getCompanyName()).isEqualTo("ERNI Consulting AG");
+    }
+
+    @Test
+    public void getInformation_from_webservice_test_request_ba() {
+        Address address = grapperService.getInformation(101861442l);
+        Address addressJson = jsonAddressReader("101861443");
+        assertThat(address).extracting(
+                Address::getCompanyName,
+                Address::getId)
+                .contains(addressJson.getCompanyName(),
+                        addressJson.getId());
+        assertThat(address.getCompanyName()).isEqualTo("Novartis Foundation");
     }
 
 

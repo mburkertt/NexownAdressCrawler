@@ -148,7 +148,7 @@
                         <version>0.12.3</version>
                         <executions>
                             <execution>
-                                <id>add-source-for-demoapp</id>
+                                <id>add-source-for-zh</id>
                                 <phase>generate-sources</phase>
                                 <goals>
                                     <goal>generate</goal>
@@ -162,16 +162,34 @@
                                     <bindingIncludes>
                                         <include>wslinkzh.xjb</include>
                                     </bindingIncludes>
-                                    <generateDirectory>target/generated-sources/xjc/workflow</generateDirectory>
-                                    <generatePackage>ch.nexown.adresscrawler.xml.workflow</generatePackage>
+                                    <generateDirectory>target/generated-sources/xjc/workflow/zh</generateDirectory>
+                                    <generatePackage>ch.nexown.adresscrawler.xml.workflow.zh</generatePackage>
+                                    <!--  Other configuration options-->
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>add-source-for-ba</id>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <schemaDirectory>src/main/resources/wsdl</schemaDirectory>
+                                    <schemaIncludes>
+                                        <include>wslinkba.xsd</include>
+                                    </schemaIncludes>
+                                    <bindingDirectory>src/main/resources/wsdl</bindingDirectory>
+                                    <bindingIncludes>
+                                        <include>wslinkba.xjb</include>
+                                    </bindingIncludes>
+                                    <generateDirectory>target/generated-sources/xjc/workflow/ba</generateDirectory>
+                                    <generatePackage>ch.nexown.adresscrawler.xml.workflow.ba</generatePackage>
                                     <!--  Other configuration options-->
 
                                 </configuration>
                             </execution>
                         </executions>
                     </plugin>
-
-
                 </plugins>
             </build>
         </profile>

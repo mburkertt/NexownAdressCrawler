@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtractList>
+    <Extract Amt="270" CHNR="CH-270.7.000.116-0" Kanton="BS" Lang="1" RF="7" Stempel="2017-01-31T08:06:18" UID="CHE-101.861.442" Valid="1" Version="0" Visum="MA" checkedDat="2008-07-04T20:18:18" checkedVis="EXP" inBearb="0" lastTB="2008-03-05" noga="889901" offenesGVZ="0" suffix="_" toCheck="0" validOnly="0">
+        <Search>
+            <Publ Ein="0">
+            </Publ>
+            <Publ Ein="1">
+                <SHABdate>1995-03-06</SHABdate>
+                <SHABmon>03</SHABmon>
+                <SHAByear>1995</SHAByear>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="2">
+                <TBnr>5278</TBnr>
+                <TBdate>1997-09-16</TBdate>
+                <TBmon>09</TBmon>
+                <TByear>1997</TByear>
+                <SHABdate>1997-09-23</SHABdate>
+                <SHABmon>09</SHABmon>
+                <SHAByear>1997</SHAByear>
+            </Publ>
+            <Publ Ein="3">
+                <TBnr>2820</TBnr>
+                <TBdate>2003-05-07</TBdate>
+                <TBmon>05</TBmon>
+                <TByear>2003</TByear>
+                <SHABdate>2003-05-14</SHABdate>
+                <SHABmon>05</SHABmon>
+                <SHAByear>2003</SHAByear>
+                <PublNr>989036</PublNr>
+            </Publ>
+            <Publ Ein="4">
+                <TBnr>7197</TBnr>
+                <TBdate>2006-11-27</TBdate>
+                <TBmon>11</TBmon>
+                <TByear>2006</TByear>
+                <SHABdate>2006-12-01</SHABdate>
+                <SHABmon>12</SHABmon>
+                <SHAByear>2006</SHAByear>
+                <PublNr>3660380</PublNr>
+            </Publ>
+            <Publ Ein="5">
+                <TBnr>1230</TBnr>
+                <TBdate>2008-03-05</TBdate>
+                <TBmon>03</TBmon>
+                <TByear>2008</TByear>
+                <SHABdate>2008-03-11</SHABdate>
+                <SHABmon>03</SHABmon>
+                <SHAByear>2008</SHAByear>
+                <PublNr>4380888</PublNr>
+            </Publ>
+            <Publ Ein="6">
+                <TBnr>6284</TBnr>
+                <TBdate>2009-07-31</TBdate>
+                <TBmon>07</TBmon>
+                <TByear>2009</TByear>
+                <SHABdate>2009-08-06</SHABdate>
+                <SHABmon>08</SHABmon>
+                <SHAByear>2009</SHAByear>
+                <PublNr>5182864</PublNr>
+                <MutFlags>00000000000000000000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="7">
+                <TBnr>6256</TBnr>
+                <TBdate>2010-10-06</TBdate>
+                <TBmon>10</TBmon>
+                <TByear>2010</TByear>
+                <SHABdate>2010-10-12</SHABdate>
+                <SHABmon>10</SHABmon>
+                <SHAByear>2010</SHAByear>
+                <PublNr>5849402</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="8">
+                <TBnr>6763</TBnr>
+                <TBdate>2011-12-05</TBdate>
+                <TBmon>12</TBmon>
+                <TByear>2011</TByear>
+                <SHABdate>2011-12-08</SHABdate>
+                <SHABmon>12</SHABmon>
+                <SHAByear>2011</SHAByear>
+                <PublNr>6449752</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="9">
+                <TBnr>5485</TBnr>
+                <TBdate>2012-09-13</TBdate>
+                <TBmon>09</TBmon>
+                <TByear>2012</TByear>
+                <SHABdate>2012-09-18</SHABdate>
+                <SHABmon>09</SHABmon>
+                <SHAByear>2012</SHAByear>
+                <PublNr>6852236</PublNr>
+                <MutFlags>00000000000000000000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="10">
+                <TBnr>415</TBnr>
+                <TBdate>2013-01-17</TBdate>
+                <TBmon>01</TBmon>
+                <TByear>2013</TByear>
+                <SHABdate>2013-01-22</SHABdate>
+                <SHABmon>01</SHABmon>
+                <SHAByear>2013</SHAByear>
+                <PublNr>7026392</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="11">
+                <TBnr>581</TBnr>
+                <TBdate>2013-01-24</TBdate>
+                <TBmon>01</TBmon>
+                <TByear>2013</TByear>
+                <SHABdate>2013-01-29</SHABdate>
+                <SHABmon>01</SHABmon>
+                <SHAByear>2013</SHAByear>
+                <PublNr>7037414</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="12">
+                <TBnr>5244</TBnr>
+                <TBdate>2013-09-19</TBdate>
+                <TBmon>09</TBmon>
+                <TByear>2013</TByear>
+                <SHABdate>2013-09-24</SHABdate>
+                <SHABmon>09</SHABmon>
+                <SHAByear>2013</SHAByear>
+                <PublNr>1092419</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="13">
+                <TBnr>6509</TBnr>
+                <TBdate>2013-11-21</TBdate>
+                <TBmon>11</TBmon>
+                <TByear>2013</TByear>
+                <SHABdate>2013-11-26</SHABdate>
+                <SHABmon>11</SHABmon>
+                <SHAByear>2013</SHAByear>
+                <PublNr>1201367</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="14">
+                <TBnr>6330</TBnr>
+                <TBdate>2014-11-17</TBdate>
+                <TBmon>11</TBmon>
+                <TByear>2014</TByear>
+                <SHABdate>2014-11-20</SHABdate>
+                <SHABmon>11</SHABmon>
+                <SHAByear>2014</SHAByear>
+                <PublNr>1832619</PublNr>
+                <MutFlags>1000100000000000001000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="15">
+                <TBnr>6576</TBnr>
+                <TBdate>2014-12-01</TBdate>
+                <TBmon>12</TBmon>
+                <TByear>2014</TByear>
+                <SHABdate>2014-12-04</SHABdate>
+                <SHABmon>12</SHABmon>
+                <SHAByear>2014</SHAByear>
+                <PublNr>1860245</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="16">
+                <TBnr>7051</TBnr>
+                <TBdate>2014-12-19</TBdate>
+                <TBmon>12</TBmon>
+                <TByear>2014</TByear>
+                <SHABdate>2014-12-24</SHABdate>
+                <SHABmon>12</SHABmon>
+                <SHAByear>2014</SHAByear>
+                <PublNr>1902593</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="17">
+                <TBnr>4214</TBnr>
+                <TBdate>2015-07-28</TBdate>
+                <TBmon>07</TBmon>
+                <TByear>2015</TByear>
+                <SHABdate>2015-07-31</SHABdate>
+                <SHABmon>07</SHABmon>
+                <SHAByear>2015</SHAByear>
+                <PublNr>2300003</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="18">
+                <TBnr>1786</TBnr>
+                <TBdate>2016-03-23</TBdate>
+                <TBmon>03</TBmon>
+                <TByear>2016</TByear>
+                <SHABdate>2016-03-30</SHABdate>
+                <SHABmon>03</SHABmon>
+                <SHAByear>2016</SHAByear>
+                <PublNr>2748669</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="19">
+                <TBnr>3832</TBnr>
+                <TBdate>2016-06-30</TBdate>
+                <TBmon>06</TBmon>
+                <TByear>2016</TByear>
+                <SHABdate>2016-07-05</SHABdate>
+                <SHABmon>07</SHABmon>
+                <SHAByear>2016</SHAByear>
+                <PublNr>2932765</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <Publ Ein="20">
+                <TBnr>5675</TBnr>
+                <TBdate>2016-10-07</TBdate>
+                <TBmon>10</TBmon>
+                <TByear>2016</TByear>
+                <SHABdate>2016-10-12</SHABdate>
+                <SHABmon>10</SHABmon>
+                <SHAByear>2016</SHAByear>
+                <PublNr>3104059</PublNr>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+            </Publ>
+            <SearchAIM Amt="270" Ein="1" Kanton="BS" RF="7" SitzNr="2701" valid="0">  ciba-geigy stiftung fur zusammenarbeit mit entwicklungslandern   </SearchAIM>
+            <SearchPHON Amt="270" Ein="1" Kanton="BS" RF="7" SitzNr="2701" valid="0">  cipageigi stiftung fir cusanenarpeit nit entficlunxlentern </SearchPHON>
+            <SearchSitz Ein="1" SitzNr="2701" valid="1">  4000 basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel    </SearchSitz>
+            <SearchAIM Amt="270" Ein="2" Kanton="BS" RF="7" SitzNr="2701" valid="0">  novartis stiftung fur nachhaltige entwicklung (fondation novartis pour un developpement durable) (novartis foundation for sustainable development)   </SearchAIM>
+            <SearchPHON Amt="270" Ein="2" Kanton="BS" RF="7" SitzNr="2701" valid="0">  nofartis stiftung fir nachaltige entficlung fontation nofartis pour un tefelopenent turaple nofartis fountation for susteinaple tefelopnent </SearchPHON>
+            <SearchSitz Ein="2" SitzNr="2701" valid="1">  4000 basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel    </SearchSitz>
+            <SearchAIM Amt="270" Ein="14" Kanton="BS" RF="7" SitzNr="2701" valid="1">  novartis foundation novartis stiftung   </SearchAIM>
+            <SearchPHON Amt="270" Ein="14" Kanton="BS" RF="7" SitzNr="2701" valid="1">  nofartis fountation nofartis stiftung </SearchPHON>
+            <SearchSitz Ein="14" SitzNr="2701" valid="1">  4000 basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel basel    </SearchSitz>
+            <Found Amt="270" CHNR="CH-270.7.000.116-0" Ein="14" Kanton="BS" RF="7" valid="1">
+                <FirmaSort>novartis foundation</FirmaSort>
+                <Hauptfassung>Novartis Foundation</Hauptfassung>
+                <Sitz SitzNr="2701">Basel</Sitz>
+                <Link>http://@@@@/HRG/HRG.asmx/getHRGHTML?chnr=2707000116&amp;amp;amt=270&amp;amp;toBeModified=0&amp;amp;validOnly=%%%%%&amp;amp;lang=^&amp;amp;sort=!</Link>
+            </Found>
+        </Search>
+        <Kopf>
+            <nextRef>21</nextRef>
+            <rf>7</rf>
+            <Eintrag>1979-08-30</Eintrag>
+            <UebertragVon AmtNr="270">
+                <ID13>CH-270.7.000.116-0/a</ID13>
+                <Link>http://@@@@/HRG/HRG.asmx/getHRGHTML?chnr=2707000116a&amp;amt=270&amp;toBeModified=0&amp;validOnly=%%%%%&amp;lang=^&amp;sort=!</Link>
+            </UebertragVon>
+            <FruehereFnr AmtNr="270">
+                <ID13>CH-270.7.000.116-9/a</ID13>
+            </FruehereFnr>
+        </Kopf>
+        <Zitate>
+            <Zitat Ein="0" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>MU</Visum>
+                <TB>
+                    <TBtext>(Auslassung)</TBtext>
+                </TB>
+                <SHAB>
+                    <SHABtext>(Auslassung)</SHABtext>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="1" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>MU</Visum>
+                <TB>
+                    <TBtext>      Berichtigung</TBtext>
+                </TB>
+                <SHAB>
+                    <SHABnr>45</SHABnr>
+                    <Datum>1995-03-06</Datum>
+                    <Seite>1261</Seite>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="2" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>SE</Visum>
+                <TB>
+                    <TBnr>5278</TBnr>
+                    <Datum>1997-09-16</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>182</SHABnr>
+                    <Datum>1997-09-23</Datum>
+                    <Seite>6993</Seite>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="3" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>DD</Visum>
+                <TB>
+                    <TBnr>2820</TBnr>
+                    <Datum>2003-05-07</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>91</SHABnr>
+                    <Datum>2003-05-14</Datum>
+                    <Seite>5</Seite>
+                    <PublNr>989036</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="4" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>BR</Visum>
+                <TB>
+                    <TBnr>7197</TBnr>
+                    <Datum>2006-11-27</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>234</SHABnr>
+                    <Datum>2006-12-01</Datum>
+                    <Seite>4</Seite>
+                    <PublNr>3660380</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="5" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Kanton>BS</Kanton>
+                <Visum>SU</Visum>
+                <TB>
+                    <TBnr>1230</TBnr>
+                    <Datum>2008-03-05</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>49</SHABnr>
+                    <Datum>2008-03-11</Datum>
+                    <Seite>5</Seite>
+                    <PublNr>4380888</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="6" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>00000000000000000000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6284</TBnr>
+                    <Datum>2009-07-31</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>150</SHABnr>
+                    <Datum>2009-08-06</Datum>
+                    <Seite>9</Seite>
+                    <PublNr>5182864</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="7" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6256</TBnr>
+                    <Datum>2010-10-06</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>198</SHABnr>
+                    <Datum>2010-10-12</Datum>
+                    <Seite>5</Seite>
+                    <PublNr>5849402</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="8" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6763</TBnr>
+                    <Datum>2011-12-05</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>239</SHABnr>
+                    <Datum>2011-12-08</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>6449752</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="9" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>00000000000000000000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>5485</TBnr>
+                    <Datum>2012-09-13</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>181</SHABnr>
+                    <Datum>2012-09-18</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>6852236</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="10" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>415</TBnr>
+                    <Datum>2013-01-17</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>14</SHABnr>
+                    <Datum>2013-01-22</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>7026392</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="11" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>581</TBnr>
+                    <Datum>2013-01-24</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>19</SHABnr>
+                    <Datum>2013-01-29</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>7037414</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="12" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>5244</TBnr>
+                    <Datum>2013-09-19</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>184</SHABnr>
+                    <Datum>2013-09-24</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>1092419</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="13" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6509</TBnr>
+                    <Datum>2013-11-21</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>229</SHABnr>
+                    <Datum>2013-11-26</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>1201367</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="14" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>1000100000000000001000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6330</TBnr>
+                    <Datum>2014-11-17</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>225</SHABnr>
+                    <Datum>2014-11-20</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>1832619</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="15" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>6576</TBnr>
+                    <Datum>2014-12-01</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>235</SHABnr>
+                    <Datum>2014-12-04</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>1860245</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="16" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>7051</TBnr>
+                    <Datum>2014-12-19</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>249</SHABnr>
+                    <Datum>2014-12-24</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>1902593</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="17" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>4214</TBnr>
+                    <Datum>2015-07-28</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>146</SHABnr>
+                    <Datum>2015-07-31</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>2300003</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="18" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>1786</TBnr>
+                    <Datum>2016-03-23</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>61</SHABnr>
+                    <Datum>2016-03-30</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>2748669</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="19" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>3832</TBnr>
+                    <Datum>2016-06-30</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>128</SHABnr>
+                    <Datum>2016-07-05</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>2932765</PublNr>
+                </SHAB>
+            </Zitat>
+            <Zitat Ein="20" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Visum>BS</Visum>
+                <MutFlags>0000000000000100000000000000000000000000000000000</MutFlags>
+                <TB>
+                    <TBnr>5675</TBnr>
+                    <Datum>2016-10-07</Datum>
+                </TB>
+                <SHAB>
+                    <SHABnr>198</SHABnr>
+                    <Datum>2016-10-12</Datum>
+                    <Seite>0</Seite>
+                    <PublNr>3104059</PublNr>
+                </SHAB>
+            </Zitat>
+        </Zitate>
+        <Sitze>
+            <Sitz Ein="1" bfs="2701" fldID="110" loe="0" mut="0" seq="0" toCheck="0" valid="1">Basel</Sitz>
+        </Sitze>
+        <Firma>
+            <Bez Ein="1" SitzNr="2701" fldID="101" fldType="Hauptfassung" loe="2" mut="0" seq="0" toCheck="0" valid="0">Ciba-Geigy Stiftung für Zusammenarbeit mit Entwicklungsländern</Bez>
+            <Bez Ein="1" fldID="102" fldType="Uebersetzung" loe="2" mut="0" seq="0" toCheck="0" valid="0">(Fondation Ciba-Geigy pour la Coopération avec les Pays en Voie de Développement)_(Ciba-Geigy Foundation for Cooperation with Developing Countries)</Bez>
+            <Bez Ein="2" SitzNr="2701" fldID="101" fldType="Hauptfassung" loe="14" mut="0" seq="0" toCheck="0" valid="0">Novartis Stiftung für nachhaltige Entwicklung</Bez>
+            <Bez Ein="2" fldID="102" fldType="Uebersetzung" loe="14" mut="0" seq="0" toCheck="0" valid="0">(Fondation Novartis pour un développement durable) (Novartis Foundation for Sustainable Development)</Bez>
+            <Bez Ein="14" fldID="101" fldType="Hauptfassung" loe="0" mut="0" seq="0" toCheck="0" valid="1">Novartis Foundation</Bez>
+            <Bez Ein="14" fldID="102" fldType="Uebersetzung" loe="0" mut="0" seq="0" toCheck="0" valid="1">Novartis Stiftung</Bez>
+        </Firma>
+        <Adressen>
+            <Adresse Ein="1" loe="2" mut="0" seq="0" toCheck="0" valid="0">
+                <Adr adrID="115" adrType="FirmenAdresse">
+                    <co>c/o CIBA-GEIGY AG</co>
+                    <Strasse NrWidth="4" nr="141">Klybeckstr. 141</Strasse>
+                    <Zusatz>
+                    </Zusatz>
+                    <PLZ>4057</PLZ>
+                    <Ort>Basel</Ort>
+                    <Land>
+                    </Land>
+                    <fullText>c/o CIBA-GEIGY AG, Klybeckstr. 141, 4057 Basel</fullText>
+                </Adr>
+            </Adresse>
+            <Adresse Ein="2" loe="4" mut="0" seq="523" toCheck="0" valid="0">
+                <Adr adrID="115" adrType="FirmenAdresse">
+                    <co>c/o Novartis International AG</co>
+                    <Strasse NrWidth="4" nr="215">Schwarzwaldallee 215</Strasse>
+                    <Zusatz>
+                    </Zusatz>
+                    <PLZ>4058</PLZ>
+                    <Ort>Basel</Ort>
+                    <Land>
+                    </Land>
+                    <fullText>c/o Novartis International AG, Schwarzwaldallee 215, 4058 Basel</fullText>
+                </Adr>
+            </Adresse>
+            <Adresse Ein="4" loe="0" mut="0" seq="2571" toCheck="0" valid="1">
+                <Adr adrID="115" adrType="FirmenAdresse">
+                    <co>c/o Novartis International AG</co>
+                    <Strasse NrWidth="3" nr="35">Lichtstr. 35</Strasse>
+                    <Zusatz>
+                    </Zusatz>
+                    <PLZ>4056</PLZ>
+                    <Ort>Basel</Ort>
+                    <Land>
+                    </Land>
+                    <fullText>c/o Novartis International AG, Lichtstr. 35, 4056 Basel</fullText>
+                </Adr>
+            </Adresse>
+        </Adressen>
+        <Zwecke>
+            <Zweck Ein="1" fldID="121" loe="2" mut="0" seq="2" toCheck="0" valid="0">Förderung der Entwicklung der ärmsten Länder und Regionen der Dritten Welt, insbesondere durch Zusammenarbeit auf den Gebieten der Landwirtschaft, des Gesundheitswesens und der Ausbildung im Sinne einer Hilfe zur Selbsthilfe sowie in wissenschaftlich fundierten Analysen, Beratung und Information zu entwicklungspolitischen Sachverhalten, ferner Hilfe bei Katastrophen in den genannten Ländern.</Zweck>
+            <Zweck Ein="2" fldID="121" loe="0" mut="0" seq="2" toCheck="0" valid="1">Förderung einer nachhaltigen Entwicklung in Entwicklungsländern mit niedrigem Pro-Kopf-Einkommen, insbesondere durch Zusammenarbeit auf den Gebieten der Landwirtschaft, des Gesundheitswesens und der sozialen Entwicklung im Sinne einer Hilfe zur Selbsthilfe. Dies geschieht durch die Finanzierung und das Management von Entwicklungshilfe-Projekten (Konzeption, Durchführung, Betreuung und Evaluation), durch wissenschaftliche Beiträge und Analysen sowie Informationen über entwicklungspolitisch relevante Sachverhalte, ferner Hilfe bei Katastrophen in den genannten Ländern. Die Stiftung ergänzt den primären, vom Novartis Konzern durch seine direkte Geschäftstätigkeit geleisteten Beitrag an die wirtschaftliche Entwicklung der genannten Länder. In der Stiftung sollen sämtliche von der Geschäftstätigkeit unabhängigen Leistungen des Novartis Konzerns auf dem Gebiete der Entwicklungshilfe zusammengefasst werden.</Zweck>
+        </Zwecke>
+        <Bemerkungen>
+            <HRbem Ein="1" fldID="132" fldType="Organisation" loe="9" mut="0" seq="3" toCheck="0" valid="0">Organisation: Stiftungsrat._Stiftungsrat: mindestens 3 Mitglieder._</HRbem>
+            <HRbem Ein="1" fldID="127" fldType="Bemerkungen" loe="0" mut="0" seq="4" toCheck="0" valid="1">Der von einer bisherigen Registerkarte übertragene Auszug enthält keine vor dem Uebertrag gestrichenen Tatsachen, und auch keine allfälligen früheren Statutendaten oder Tagebuch- und SHAB-Zitate. Diese können auf der bisherigen Handelsregisterkarte eingesehen werden.</HRbem>
+            <HRbem Ein="1" fldID="191" fldType="AufsichtsBehoerde" loe="6" mut="0" seq="0" toCheck="0" valid="0">Justizdepartement Basel-Stadt</HRbem>
+            <HRbem Ein="6" fldID="191" fldType="AufsichtsBehoerde" loe="9" mut="0" seq="0" toCheck="0" valid="0">Stiftungsaufsicht des Kantons Basel-Stadt</HRbem>
+            <HRbem Ein="9" fldID="191" fldType="AufsichtsBehoerde" loe="0" mut="0" seq="0" toCheck="0" valid="1">BVG- und Stiftungsaufsicht beider Basel (BSABB) </HRbem>
+        </Bemerkungen>
+        <Statuten>
+            <Statut Ein="1" fldID="157" loe="0" mut="0" seq="2" toCheck="0" valid="1">
+                <Datum>1979-06-06</Datum>
+            </Statut>
+            <Statut Ein="1" fldID="157" loe="0" mut="0" seq="3" toCheck="0" valid="1">
+                <Datum>1990-08-09</Datum>
+            </Statut>
+            <Statut Ein="2" fldID="157" loe="0" mut="0" seq="2" toCheck="0" valid="1">
+                <Datum>1997-06-27</Datum>
+            </Statut>
+            <Statut Ein="2" fldID="157" loe="0" mut="0" seq="3" toCheck="0" valid="1">
+                <Datum>1997-06-30</Datum>
+            </Statut>
+            <Statut Ein="14" loe="0" mut="0" seq="0" toCheck="0" valid="1">
+                <Datum>2014-11-05</Datum>
+            </Statut>
+        </Statuten>
+        <Personal>
+            <Person Ein="1" loe="2" mut="0" seq="2" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Schneiter</Name>
+                    <Vorname>Rudolf</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="921">Amsoldingen</Heimat>
+                    <WohnOrt PLZ="4125">Riehen</WohnOrt>
+                    <PersDaten>Schneiter, Dr. Rudolf, von Amsoldingen, in Riehen</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="430" valid="0">
+                        <func>Präsident des Stiftungsrates</func>
+                        <kurz>Präsident</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="1" loe="2" mut="1" seq="3" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Leisinger</Name>
+                    <Vorname>Prof. Dr. Klaus M.</Vorname>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="D " PLZ="9999">Rümmingen (D)</WohnOrt>
+                    <PersDaten>Leisinger, Prof. Dr. Klaus M., deutscher Staatsangehöriger, in Rümmingen (D)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="480" valid="0">
+                        <func>Vizepräsident des Stiftungsrates</func>
+                        <kurz>Vizepräsident</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                    <Fkt FunkNr="510" valid="0">
+                        <func>Delegierter des Stiftungsrates</func>
+                        <kurz>Delegierter</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="1" loe="2" mut="1" seq="4" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Barmann</Name>
+                    <Vorname>Jacques Pierre</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="6215">Massongex</Heimat>
+                    <WohnOrt PLZ="4414">Füllinsdorf</WohnOrt>
+                    <PersDaten>Barmann, Dr. Jacques Pierre, von Massongex, in Füllinsdorf</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="1" loe="5" mut="1" seq="5" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Lehn</Name>
+                    <Vorname>Prof. Dr. Jean-Marie</Vorname>
+                    <Heimat BFS="9999" Land="FR" adj="französischer">französischer Staatsangehöriger</Heimat>
+                    <WohnOrt Land="F " PLZ="9999">Strasbourg (F)</WohnOrt>
+                    <PersDaten>Lehn, Prof. Dr. Jean-Marie, französischer Staatsangehöriger, in Strasbourg (F)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="1" loe="2" mut="1" seq="6" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Nicolier</Name>
+                    <Vorname>Felix L.</Vorname>
+                    <Heimat BFS="5411">Ormont-Dessus</Heimat>
+                    <WohnOrt PLZ="1867">Antagnes</WohnOrt>
+                    <PersDaten>Nicolier, Felix L., von Ormont-Dessus, in Antagnes</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="754" valid="0">
+                        <func>Geschäftsführer</func>
+                        <kurz>Geschäftsführer</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="2" loe="3" mut="0" seq="2" toCheck="0" valid="0">
+                <RefCancel Ein="1" seq="4">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Barmann</Name>
+                    <Vorname>Jacques Pierre</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="6215">Massongex</Heimat>
+                    <WohnOrt PLZ="4414">Füllinsdorf</WohnOrt>
+                    <PersDaten>Barmann, Dr. Jacques Pierre, von Massongex, in Füllinsdorf</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="430" valid="0">
+                        <func>Präsident des Stiftungsrates</func>
+                        <kurz>Präsident</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="2" loe="3" mut="1" seq="3" toCheck="0" valid="0">
+                <RefCancel Ein="1" seq="3">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Leisinger</Name>
+                    <Vorname>Prof. Dr. Klaus M.</Vorname>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="D " PLZ="9999">Rümmingen (D)</WohnOrt>
+                    <PersDaten>Leisinger, Prof. Dr. Klaus M., deutscher Staatsangehöriger, in Rümmingen (D)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="400" valid="0">
+                        <func>Vizepräsident und Delegierter des Stiftungsrates und Geschäftsführer</func>
+                        <kurz>Vizepräsident und Delegierter des Stiftungsrates und Geschäftsführer</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="2" loe="3" mut="0" seq="4" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Frei</Name>
+                    <Vorname>Jost</Vorname>
+                    <Heimat BFS="1103">Sursee</Heimat>
+                    <WohnOrt PLZ="4148">Pfeffingen</WohnOrt>
+                    <PersDaten>Frei, Jost, von Sursee, in Pfeffingen</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="2" loe="5" mut="1" seq="5" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Jetzer</Name>
+                    <Vorname>Alexandre</Vorname>
+                    <Heimat BFS="2701">Basel</Heimat>
+                    <Heimat BFS="4312">Lengnau AG</Heimat>
+                    <WohnOrt PLZ="6300">Zug</WohnOrt>
+                    <PersDaten>Jetzer, Alexandre, von Basel und Lengnau AG, in Zug</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="2" loe="3" mut="0" seq="6" toCheck="0" valid="0">
+                <RefCancel Ein="1" seq="6">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Nicolier</Name>
+                    <Vorname>Felix L.</Vorname>
+                    <Heimat BFS="5411">Ormont-Dessus</Heimat>
+                    <WohnOrt PLZ="1867">Antagnes</WohnOrt>
+                    <PersDaten>Nicolier, Felix L., von Ormont-Dessus, in Antagnes</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="0">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="2" loe="3" mut="0" seq="7" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Grewal Williams</Name>
+                    <Vorname>Penny</Vorname>
+                    <Heimat BFS="9999" Land="CA" adj="kanadischer">kanadische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="4000">Basel</WohnOrt>
+                    <PersDaten>Grewal Williams, Penny, kanadische Staatsangehörige, in Basel</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="0">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="2" loe="13" mut="0" seq="8" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Schmitt</Name>
+                    <Vorname>Karin</Vorname>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutsche Staatsangehörige</Heimat>
+                    <WohnOrt Land="D " PLZ="9999">Lörrach (D)</WohnOrt>
+                    <PersDaten>Schmitt, Karin, deutsche Staatsangehörige, in Lörrach (D)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="0">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="3" loe="12" mut="0" seq="2" toCheck="0" valid="0">
+                <RefCancel Ein="2" seq="3">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Leisinger</Name>
+                    <Vorname>Prof. Dr. Klaus M.</Vorname>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="D " PLZ="9999">Rümmingen (D)</WohnOrt>
+                    <PersDaten>Leisinger, Prof. Dr. Klaus M., deutscher Staatsangehöriger, in Rümmingen (D)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="430" valid="0">
+                        <func>Präsident des Stiftungsrates</func>
+                        <kurz>Präsident</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="3" loe="5" mut="0" seq="3" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Bärlocher</Name>
+                    <Vorname>Urs</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="3237">Thal</Heimat>
+                    <WohnOrt PLZ="4125">Riehen</WohnOrt>
+                    <PersDaten>Bärlocher, Dr. Urs, von Thal, in Riehen</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="592" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="3" loe="4" mut="0" seq="4" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Seiter</Name>
+                    <Vorname>Andreas</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="D " PLZ="9999">Lörrach (D)</WohnOrt>
+                    <PersDaten>Seiter, Dr. Andreas, deutscher Staatsangehöriger, in Lörrach (D)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="592" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="4" loe="7" mut="0" seq="2" toCheck="0" valid="0">
+                <Personalien Sexe="2" valid="0">
+                    <Name>Wellauer</Name>
+                    <Vorname>Thomas</Vorname>
+                    <Titel>Dr.</Titel>
+                    <Heimat BFS="261">Zürich</Heimat>
+                    <WohnOrt PLZ="8703">Erlenbach ZH</WohnOrt>
+                    <PersDaten>Wellauer, Dr. Thomas, von Zürich, in Erlenbach ZH</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="4" loe="14" mut="1" seq="3" toCheck="0" valid="0">
+                <Personalien Sexe="0" valid="0">
+                    <Name>PricewaterhouseCoopers AG</Name>
+                    <WohnOrt PLZ="4000" SitzBFS="2701">Basel</WohnOrt>
+                    <PersDaten>PricewaterhouseCoopers AG, in Basel</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="890" valid="0">
+                        <func>Revisionsstelle</func>
+                        <kurz>Revisionsstelle</kurz>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="5" loe="12" mut="0" seq="2" toCheck="0" valid="0">
+                <RefCancel Ein="2" seq="5">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Jetzer</Name>
+                    <Vorname>Alexandre</Vorname>
+                    <Heimat BFS="2701">Basel</Heimat>
+                    <Heimat BFS="4312">Lengnau AG</Heimat>
+                    <WohnOrt PLZ="6300">Zug</WohnOrt>
+                    <PersDaten>Jetzer, Alexandre, von Basel und Lengnau AG, in Zug</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="990">
+                            <sign>ohne Zeichnungsberechtigung</sign>
+                            <signKurz>ohne ZB</signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Aenderung="1" Ein="5" loe="15" mut="0" seq="3" toCheck="0" valid="0">
+                <RefCancel Ein="1" seq="5">
+                </RefCancel>
+                <Personalien Sexe="2" valid="0">
+                    <Name>Lehn</Name>
+                    <Vorname>Prof. Dr. Jean-Marie</Vorname>
+                    <Heimat BFS="9999" Land="FR" adj="französischer">französischer Staatsangehöriger</Heimat>
+                    <WohnOrt Land="FR" PLZ="9999">Strasbourg (FR)</WohnOrt>
+                    <PersDaten>Lehn, Prof. Dr. Jean-Marie, französischer Staatsangehöriger, in Strasbourg (FR)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ZartNr="990">
+                            <sign>ohne Zeichnungsberechtigung</sign>
+                            <signKurz>ohne ZB</signKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+            </Person>
+            <Person Ein="7" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersID="" PersNr="" Sexe="2" valid="1">
+                    <Name>Brokatzky-Geiger</Name>
+                    <Vorname>Jürgen</Vorname>
+                    <Titel>Dr.</Titel>
+                    <GeburtsDatum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true">
+                    </GeburtsDatum>
+                    <Heimat BFS="9999" Land="DE" adj="deutscher">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="DE" PLZ="9999" SitzBFS="9999">Lörrach (DE)</WohnOrt>
+                    <PersDaten>Brokatzky-Geiger, Dr. Jürgen, deutscher Staatsangehöriger, in Lörrach (DE)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="1">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="8" justModified="0" loe="16" mut="0" seq="1" toCheck="0" valid="0">
+                <Personalien PersID="" PersNr="" Sexe="2" valid="0">
+                    <Name>Gunn</Name>
+                    <Vorname>George</Vorname>
+                    <GeburtsDatum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true">
+                    </GeburtsDatum>
+                    <Heimat BFS="9999" Land="GB" adj="britischer">britischer Staatsangehöriger</Heimat>
+                    <WohnOrt Land="" PLZ="8703" SitzBFS="151">Erlenbach ZH</WohnOrt>
+                    <PersDaten>Gunn, George, britischer Staatsangehöriger, in Erlenbach ZH</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="10" justModified="0" loe="11" mut="1" seq="1" toCheck="0" valid="0">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="0">
+                    <Name Publ="1">Aerts</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Dr. Ann</Vorname>
+                    <Vorname Publ="1">Maria</Vorname>
+                    <Vorname Publ="1">Paula</Vorname>
+                    <Vorname Publ="1">Jozef</Vorname>
+                    <GeburtsDatum>1963-11-25</GeburtsDatum>
+                    <Heimat BFS="9999" Land="BE">belgische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="4147" SitzBFS="2761">Aesch BL</WohnOrt>
+                    <Ausweis Land="BE" Typ="Pass">EH197519</Ausweis>
+                    <PersDaten>Aerts, Dr. Ann Maria Paula Jozef, belgische Staatsangehörige, in Aesch BL</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="0">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Aenderung="1" Ein="11" justModified="0" loe="0" mut="0" seq="1" toCheck="0" valid="1">
+                <RefCancel Ein="10" seq="1">
+                </RefCancel>
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="1">
+                    <Name Publ="1">Aerts</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Dr. Ann</Vorname>
+                    <Vorname Publ="1">Maria</Vorname>
+                    <Vorname Publ="1">Paula</Vorname>
+                    <Vorname Publ="1">Jozef</Vorname>
+                    <GeburtsDatum>1963-11-25</GeburtsDatum>
+                    <Heimat BFS="9999" Land="BE" adj="belgische">belgische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="4104" SitzBFS="2771">Oberwil BL</WohnOrt>
+                    <Ausweis Land="BE" Typ="Pass">EH197519</Ausweis>
+                    <PersDaten>Aerts, Dr. Ann Maria Paula Jozef, belgische Staatsangehörige, in Oberwil BL</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" oldF="590" valid="1">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                    <Fkt FunkNr="754" valid="1">
+                        <func>Geschäftsführerin</func>
+                        <kurz>Geschäftsführerin</kurz>
+                        <ZB ExtraNr="0" ZartNr="0">
+                            <sign>
+                            </sign>
+                            <signKurz>
+                            </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <PersModif>[bisher:  in Aesch BL, Mitglied des Stiftungsrates mit Kollektivunterschrift zu zweien]</PersModif>
+            </Person>
+            <Person Ein="12" justModified="0" loe="16" mut="0" seq="1" toCheck="0" valid="0">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="2" valid="0">
+                    <Name Publ="1">Oswald</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Dr. Andrin</Vorname>
+                    <Vorname Publ="0">Lucas</Vorname>
+                    <GeburtsDatum>1971-01-10</GeburtsDatum>
+                    <Heimat BFS="3574">Ilanz</Heimat>
+                    <WohnOrt PLZ="6300" SitzBFS="1701">Baar</WohnOrt>
+                    <Ausweis Land="CH" Typ="Pass">X1776658</Ausweis>
+                    <PersDaten>Oswald, Dr. Andrin, von Ilanz, in Baar</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="430" valid="0">
+                        <func>Präsident des Stiftungsrates</func>
+                        <kurz>Präsident</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Aenderung="1" Ein="14" justModified="0" loe="0" mut="0" seq="1" toCheck="0" valid="1">
+                <RefCancel Ein="4" seq="3">
+                </RefCancel>
+                <Personalien CHNR="" PersExtra="1" PersID="" PersNr="" Sexe="0" UID="CHE-393.441.652" valid="1">
+                    <Name Publ="1">PricewaterhouseCoopers AG</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">
+                    </Vorname>
+                    <GeburtsDatum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true">
+                    </GeburtsDatum>
+                    <Heimat BFS="-1">
+                    </Heimat>
+                    <WohnOrt Land="" PLZ="4000" SitzBFS="2701">Basel</WohnOrt>
+                    <PersDaten>PricewaterhouseCoopers AG (CHE-393.441.652), in Basel</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="890" oldF="890" valid="1">
+                        <func>Revisionsstelle</func>
+                        <kurz>Revisionsstelle</kurz>
+                        <ZB ExtraNr="0" ZartNr="0">
+                            <sign>
+                            </sign>
+                            <signKurz>
+                            </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <PersModif>[bisher: PricewaterhouseCoopers AG]</PersModif>
+            </Person>
+            <Person Ein="15" justModified="0" loe="20" mut="0" seq="1" toCheck="0" valid="0">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="0">
+                    <Name Publ="1">Morrow</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Julie Ann</Vorname>
+                    <GeburtsDatum>1967-08-23</GeburtsDatum>
+                    <Heimat BFS="9999" Land="US" adj="amerikanische">amerikanische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="4000" SitzBFS="2701">Basel</WohnOrt>
+                    <Ausweis Land="US" Typ="Pass">505726765</Ausweis>
+                    <PersDaten>Morrow, Julie Ann, amerikanische Staatsangehörige, in Basel</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="0">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="16" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="2" valid="1">
+                    <Name Publ="1">Reinhardt</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Dr. Hans</Vorname>
+                    <Vorname Publ="1">Jörg</Vorname>
+                    <GeburtsDatum>1956-03-11</GeburtsDatum>
+                    <Heimat BFS="9999" Land="DE">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt Land="DE" PLZ="9999" SitzBFS="9999">Ehrenkirchen (DE)</WohnOrt>
+                    <Ausweis Land="DE" Typ="Pass">C94VHJGJW</Ausweis>
+                    <PersDaten>Reinhardt, Dr. Hans Jörg, deutscher Staatsangehöriger, in Ehrenkirchen (DE)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="430" valid="1">
+                        <func>Präsident des Stiftungsrates</func>
+                        <kurz>Präsident</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="16" justModified="0" seq="2" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="2" valid="1">
+                    <Name Publ="1">Böhm</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Rainer</Vorname>
+                    <Vorname Publ="0">Josef</Vorname>
+                    <GeburtsDatum>1960-05-09</GeburtsDatum>
+                    <Heimat BFS="9999" Land="DE">deutscher Staatsangehöriger</Heimat>
+                    <WohnOrt PLZ="4058" SitzBFS="2703">Riehen</WohnOrt>
+                    <Ausweis Land="DE" Typ="Pass">C4YLTYCR3</Ausweis>
+                    <PersDaten>Böhm, Rainer, deutscher Staatsangehöriger, in Riehen</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="1">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="17" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="1">
+                    <Name Publ="1">Weintraub</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Dr. Rebecca</Vorname>
+                    <Vorname Publ="1">Lynn</Vorname>
+                    <GeburtsDatum>1974-04-23</GeburtsDatum>
+                    <Heimat BFS="9999" Land="US">amerikanische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="0" SitzBFS="0">Boston (US/MA)</WohnOrt>
+                    <Ausweis Land="US" Typ="Pass">307015477</Ausweis>
+                    <PersDaten>Weintraub, Dr. Rebecca Lynn, amerikanische Staatsangehörige, in Boston (US/MA)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="1">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="17" justModified="0" seq="2" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="2" valid="1">
+                    <Name Publ="1">Piot</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Prof. Peter</Vorname>
+                    <Vorname Publ="1">Karel</Vorname>
+                    <GeburtsDatum>1949-02-17</GeburtsDatum>
+                    <Heimat BFS="9999" Land="BE">belgischer Staatsangehöriger</Heimat>
+                    <WohnOrt Land="UK" PLZ="9999" SitzBFS="9999">London (UK)</WohnOrt>
+                    <Ausweis Land="BE" Typ="ID">130800921003</Ausweis>
+                    <PersDaten>Piot, Prof. Peter Karel, belgischer Staatsangehöriger, in London (UK)</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="590" valid="1">
+                        <func>Mitglied des Stiftungsrates</func>
+                        <kurz>Mitglied</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Waehrung="CHF" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="18" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="1">
+                    <Name Publ="1">Roth Pellanda</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Katja </Vorname>
+                    <Vorname Publ="1">Nicole</Vorname>
+                    <GeburtsDatum>1975-01-26</GeburtsDatum>
+                    <Heimat BFS="2701">Basel</Heimat>
+                    <WohnOrt PLZ="4000" SitzBFS="2701">Basel</WohnOrt>
+                    <Ausweis Land="CH" Typ="ID">E1784205</Ausweis>
+                    <PersDaten>Roth Pellanda, Katja  Nicole, von Basel, in Basel</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="704" valid="1">
+                        <func>Sekretärin (Nichtmitglied)</func>
+                        <kurz>Sekretärin (Nichtmitglied)</kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="19" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="2" valid="1">
+                    <Name Publ="1">Straumann</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Theo</Vorname>
+                    <GeburtsDatum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1962-05-31</GeburtsDatum>
+                    <Heimat BFS="2480">Seewen</Heimat>
+                    <WohnOrt PLZ="4206" SitzBFS="2480">Seewen</WohnOrt>
+                    <Ausweis Land="CH" Typ="ID">C2427551</Ausweis>
+                    <PersDaten>Straumann, Theo, von Seewen, in Seewen</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="1">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien  </signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+            <Person Ein="20" justModified="0" seq="1" toCheck="0" valid="1">
+                <Personalien PersExtra="1" PersID="" PersNr="" Sexe="1" valid="1">
+                    <Name Publ="1">Bosurgi</Name>
+                    <BirthName Publ="1">
+                    </BirthName>
+                    <Alias Publ="1">
+                    </Alias>
+                    <Vorname Publ="1">Roberta</Vorname>
+                    <GeburtsDatum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1968-09-23</GeburtsDatum>
+                    <Heimat BFS="9999" Land="IT" adj="italienische">italienische Staatsangehörige</Heimat>
+                    <WohnOrt PLZ="4123" SitzBFS="2762">Allschwil</WohnOrt>
+                    <Ausweis Land="IT" Typ="Pass">AA2089108</Ausweis>
+                    <PersDaten>Bosurgi, Roberta, italienische Staatsangehörige, in Allschwil</PersDaten>
+                </Personalien>
+                <Funktion>
+                    <Fkt FunkNr="898" valid="1">
+                        <func>
+                        </func>
+                        <kurz>
+                        </kurz>
+                        <ZB ExtraNr="0" ZartNr="920">
+                            <sign>Kollektivunterschrift zu zweien</sign>
+                            <signKurz>KU zu zweien</signKurz>
+                            <extra>
+                            </extra>
+                            <extraKurz>
+                            </extraKurz>
+                        </ZB>
+                    </Fkt>
+                </Funktion>
+                <Garantie>
+                    <Summe Anzahl="1" Betrag="0" Typ="7" Vorrechte="" Wert="0">0</Summe>
+                </Garantie>
+            </Person>
+        </Personal>
+        <Logs>
+            <Log Dat="2003-05-14" LogType="00000000" Start="16:44" Stop="16:44" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+            <Log Dat="2005-03-14" LogType="00000000" Start="11:37" Stop="11:37" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+            <Log Dat="2006-09-29" LogType="00000000" Start="14:40" Stop="14:41" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+            <Log Dat="2006-11-30" LogType="00000000" Start="08:56" Stop="08:56" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+            <Log Dat="2008-03-10" LogType="10000000" Start="11:47" Stop="11:47" Vis="BR">
+                <Modif>Autom.</Modif>
+            </Log>
+            <Log Dat="2008-03-10" LogType="00000000" Start="11:52" Stop="11:52" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+            <Log Dat="2008-03-10" LogType="00000000" Start="11:56" Stop="11:56" Vis="BR">
+                <Modif>?</Modif>
+            </Log>
+        </Logs>
+    </Extract>
+</ExtractList>

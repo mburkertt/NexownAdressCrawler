@@ -1,10 +1,13 @@
 package ch.nexown.adresscrawler.Service;
 
-
 import ch.admin.e_service.zefix._2015_06_26.*;
 import ch.ech.xmlns.ech_0010._4.AddressInformationType;
 import ch.nexown.adresscrawler.Model.Address;
-import ch.nexown.adresscrawler.xml.workflow.*;
+import ch.nexown.adresscrawler.Model.LegalSeat;
+import ch.nexown.adresscrawler.xml.workflow.ba.Extract;
+import ch.nexown.adresscrawler.xml.workflow.ba.ExtractList;
+import ch.nexown.adresscrawler.xml.workflow.ba.Zweck;
+import ch.nexown.adresscrawler.xml.workflow.zh.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -15,6 +18,9 @@ import org.springframework.stereotype.Service;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
 import javax.xml.ws.BindingProvider;
 import java.io.*;
 import java.net.URL;
@@ -30,7 +36,6 @@ public class AdressGrapperServiceImpl {
 
     private static final Logger LOG = LoggerFactory.getLogger(AdressGrapperServiceImpl.class);
     private static final int TIMING = 6;
-    private static final int CH_DECIMAL_POINTS = 11;
     private ZefixService zefixService = new ZefixService();
 
     private static String getUrlSource(String url) throws IOException {
@@ -134,24 +139,95 @@ public class AdressGrapperServiceImpl {
         } else {
             address.setCompanyName(companyDetailedInfoType.getName());
         }
-        if (getPurpose(companyDetailedInfoType) == null
-                || StringUtils.isEmpty(getPurpose(companyDetailedInfoType))) {
-            address.setCompanyPurpose("No Companypurpose Available");
-        } else {
-            address.setCompanyPurpose(companyDetailedInfoType.getPurpose());
-        }
-        if (getOwner(companyDetailedInfoType) == null
-                || StringUtils.isEmpty(getOwner(companyDetailedInfoType))) {
-            address.setOwner("No Owner Registered");
-        } else {
-            address.setOwner(getOwner(companyDetailedInfoType));
-        }
+        getOwnerAndPurposeDependingOnKanton(address, companyDetailedInfoType);
         writeJson(address);
         return address;
     }
 
-    private String getOwner(CompanyDetailedInfoType companyDetailedInfoType) {
-        Excerpt objectFactory = getWsLinkInformation(companyDetailedInfoType);
+    private Address getOwnerAndPurposeDependingOnKanton(Address address, CompanyDetailedInfoType companyDetailedInfoType) {
+        if (companyDetailedInfoType.getLegalSeat().contains(LegalSeat.ZH)) {
+            return getAdressZh(address, companyDetailedInfoType);
+        }
+        if (companyDetailedInfoType.getLegalSeat().contains(LegalSeat.BA)) {
+            return getAdressBa(address, companyDetailedInfoType);
+        }
+        address.setCompanyPurpose("Kanton service not implemented yet");
+        address.setOwner("Kanton service not implemented yet");
+        return address;
+    }
+
+    private Address getAdressBa(Address address, CompanyDetailedInfoType companyDetailedInfoType) {
+        if (getPurposeBa(companyDetailedInfoType) == null
+                || StringUtils.isEmpty(getPurposeBa(companyDetailedInfoType))) {
+            address.setCompanyPurpose("No Companypurpose Available");
+        } else {
+            address.setCompanyPurpose(getPurposeBa(companyDetailedInfoType));
+        }
+        if (getOwnerBa(companyDetailedInfoType) == null
+                || StringUtils.isEmpty(getOwnerBa(companyDetailedInfoType))) {
+            address.setOwner("No Owner Registered");
+        } else {
+            address.setOwner(getOwnerBa(companyDetailedInfoType));
+        }
+        return address;
+    }
+
+    private String getPurposeBa(CompanyDetailedInfoType companyDetailedInfoType) {
+        ExtractList objectFactory = getWsLinkInformationBa(companyDetailedInfoType);
+        if (extractListIsNullSafe(objectFactory)) {
+            List<Zweck> zweckList = objectFactory.getExtract().getZwecke().getZweck();
+            StringBuilder stringBuilder = new StringBuilder();
+            for (Zweck zweck : zweckList) {
+                stringBuilder.append(zweck.getValue());
+                stringBuilder.append("\n");
+            }
+            return stringBuilder.toString();
+        } else {
+            return "No Owner Found";
+        }
+    }
+
+    private String getOwnerBa(CompanyDetailedInfoType companyDetailedInfoType) {
+        ExtractList objectFactory = getWsLinkInformationBa(companyDetailedInfoType);
+        if (extractListIsNullSafe(objectFactory)) {
+            List<ch.nexown.adresscrawler.xml.workflow.ba.Person> personList = objectFactory.getExtract().getPersonal().getPerson();
+            StringBuilder stringBuilder = new StringBuilder();
+            for (ch.nexown.adresscrawler.xml.workflow.ba.Person person : personList) {
+                stringBuilder.append(person.getPersonalien().getPersDaten());
+                stringBuilder.append("\n");
+            }
+            return stringBuilder.toString();
+        } else {
+            return "No Owner Found";
+        }
+    }
+
+    private boolean extractListIsNullSafe(ExtractList objectFactory) {
+        if (objectFactory == null || objectFactory.getExtract() == null) {
+            return false;
+        }
+        return true;
+    }
+
+    private Address getAdressZh(Address address, CompanyDetailedInfoType companyDetailedInfoType) {
+        if (getPurposeZh(companyDetailedInfoType) == null
+                || StringUtils.isEmpty(getPurposeZh(companyDetailedInfoType))) {
+            address.setCompanyPurpose("No Companypurpose Available");
+        } else {
+            address.setCompanyPurpose(companyDetailedInfoType.getPurpose());
+        }
+        if (getOwnerZh(companyDetailedInfoType) == null
+                || StringUtils.isEmpty(getOwnerZh(companyDetailedInfoType))) {
+            address.setOwner("No Owner Registered");
+        } else {
+            address.setOwner(getOwnerZh(companyDetailedInfoType));
+        }
+        return address;
+    }
+
+
+    private String getOwnerZh(CompanyDetailedInfoType companyDetailedInfoType) {
+        Excerpt objectFactory = getWsLinkInformationZh(companyDetailedInfoType);
         if (excerptIsNullSafe(objectFactory)) {
             Persons persons = objectFactory.getInstances().getInstance().getRubrics().getPersons();
             List<Person> personList = persons.getPerson();
@@ -191,8 +267,8 @@ public class AdressGrapperServiceImpl {
         return false;
     }
 
-    private String getPurpose(CompanyDetailedInfoType companyDetailedInfoType) {
-        Excerpt objectFactory = getWsLinkInformation(companyDetailedInfoType);
+    private String getPurposeZh(CompanyDetailedInfoType companyDetailedInfoType) {
+        Excerpt objectFactory = getWsLinkInformationZh(companyDetailedInfoType);
         if (excerptIsNullSafePurpose(objectFactory)) {
             Purposes purposes = objectFactory.getInstances().getInstance().getRubrics().getPurposes();
             if (purposes.getPurpose() == null
@@ -208,7 +284,8 @@ public class AdressGrapperServiceImpl {
 
     }
 
-    private Excerpt getWsLinkInformation(CompanyDetailedInfoType companyDetailedInfoType) {
+    private Excerpt getWsLinkInformationZh(CompanyDetailedInfoType companyDetailedInfoType) {
+        JAXBContext jaxbContext = getJaxbContextZh();
         String wsLink = companyDetailedInfoType.getWsLink();
         String xmlString = "";
         try {
@@ -216,9 +293,8 @@ public class AdressGrapperServiceImpl {
         } catch (IOException e) {
             LOG.error("Error while getting Web Sources: {}", e);
         }
-        JAXBContext jaxbContext = getJaxbContext();
         if (jaxbContext != null) {
-            Excerpt objectFactory = unmarshallObjectFactory(jaxbContext, xmlString);
+            Excerpt objectFactory = unmarshallObjectFactoryZh(jaxbContext, xmlString);
             return objectFactory;
         } else {
             LOG.error("jaxbContext was null no Instanciation possible");
@@ -226,7 +302,44 @@ public class AdressGrapperServiceImpl {
         }
     }
 
-    private Excerpt unmarshallObjectFactory(JAXBContext jaxbContext, String xmlString) {
+    private ExtractList getWsLinkInformationBa(CompanyDetailedInfoType companyDetailedInfoType) {
+        JAXBContext jaxbContext = getJaxbContextBa();
+        String wsLink = companyDetailedInfoType.getWsLink();
+        String xmlString = "";
+        try {
+            xmlString = getUrlSource(wsLink);
+        } catch (IOException e) {
+            LOG.error("Error while getting Web Sources: {}", e);
+        }
+        if (jaxbContext != null) {
+            ExtractList objectFactory = unmarshallObjectFactoryBa(jaxbContext, xmlString);
+            return objectFactory;
+        } else {
+            LOG.error("jaxbContext was null no Instanciation possible");
+            return null;
+        }
+    }
+
+    private ExtractList unmarshallObjectFactoryBa(JAXBContext jaxbContext, String xmlString) {
+        ExtractList objectFactory = null;
+        Unmarshaller jaxbUnmarshaller = null;
+        try {
+            jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+        } catch (JAXBException e) {
+            LOG.error("Failed to Instanciate jaxbUnmarshaller: {}", e);
+        }
+        try {
+            StringReader reader = new StringReader(xmlString);
+            objectFactory = (ExtractList) jaxbUnmarshaller.unmarshal(reader);
+            Extract extract = new Extract();
+        } catch (JAXBException e1) {
+            LOG.error("Binding failed: {}", e1);
+        }
+        return objectFactory;
+    }
+
+
+    private Excerpt unmarshallObjectFactoryZh(JAXBContext jaxbContext, String xmlString) {
         Excerpt objectFactory = null;
         Unmarshaller jaxbUnmarshaller = null;
         try {
@@ -235,19 +348,31 @@ public class AdressGrapperServiceImpl {
             LOG.error("Failed to Instanciate jaxbUnmarshaller: {}", e);
         }
         StringReader reader = new StringReader(xmlString);
+        Source xmlInput = new StreamSource(new StringReader(xmlString));
         try {
-            objectFactory = (Excerpt) jaxbUnmarshaller.unmarshal(reader);
-        } catch (JAXBException e) {
-            LOG.error("Binding failed: {}", e);
+            Schema schema = jaxbUnmarshaller.getSchema();
+            objectFactory = (Excerpt) jaxbUnmarshaller.unmarshal(xmlInput);
+        } catch (JAXBException e1) {
+            LOG.error("Binding failed: {}", e1);
         }
         return objectFactory;
     }
 
 
-    private JAXBContext getJaxbContext() {
+    private JAXBContext getJaxbContextZh() {
         JAXBContext jaxbContext = null;
         try {
             jaxbContext = JAXBContext.newInstance(Excerpt.class);
+        } catch (JAXBException e) {
+            LOG.error("Error creating Jaxbcontext: {}", e);
+        }
+        return jaxbContext;
+    }
+
+    private JAXBContext getJaxbContextBa() {
+        JAXBContext jaxbContext = null;
+        try {
+            jaxbContext = JAXBContext.newInstance(ExtractList.class);
         } catch (JAXBException e) {
             LOG.error("Error creating Jaxbcontext: {}", e);
         }

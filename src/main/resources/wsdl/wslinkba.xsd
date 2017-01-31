@@ -1,0 +1,599 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="SHABdate" type="xs:date"/>
+    <xs:element name="SHABmon" type="xs:byte"/>
+    <xs:element name="SHAByear" type="xs:short"/>
+    <xs:element name="MutFlags" type="xs:integer"/>
+    <xs:element name="TBnr" type="xs:short"/>
+    <xs:element name="TBdate" type="xs:date"/>
+    <xs:element name="TBmon" type="xs:byte"/>
+    <xs:element name="TByear" type="xs:short"/>
+    <xs:element name="PublNr" type="xs:int"/>
+    <xs:element name="FirmaSort" type="xs:string"/>
+    <xs:element name="Hauptfassung" type="xs:string"/>
+    <xs:element name="Sitz">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:short" name="SitzNr" use="optional"/>
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:short" name="bfs" use="optional"/>
+                    <xs:attribute type="xs:byte" name="fldID" use="optional"/>
+                    <xs:attribute type="xs:byte" name="loe" use="optional"/>
+                    <xs:attribute type="xs:byte" name="mut" use="optional"/>
+                    <xs:attribute type="xs:byte" name="seq" use="optional"/>
+                    <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+                    <xs:attribute type="xs:byte" name="valid" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Link" type="xs:anyURI"/>
+    <xs:element name="Publ">
+        <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element ref="TBnr"/>
+                <xs:element ref="TBdate"/>
+                <xs:element ref="TBmon"/>
+                <xs:element ref="TByear"/>
+                <xs:element ref="SHABdate"/>
+                <xs:element ref="SHABmon"/>
+                <xs:element ref="SHAByear"/>
+                <xs:element ref="MutFlags"/>
+                <xs:element ref="PublNr"/>
+            </xs:choice>
+            <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SearchAIM">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:short" name="Amt"/>
+                    <xs:attribute type="xs:byte" name="Ein"/>
+                    <xs:attribute type="xs:string" name="Kanton"/>
+                    <xs:attribute type="xs:byte" name="RF"/>
+                    <xs:attribute type="xs:short" name="SitzNr"/>
+                    <xs:attribute type="xs:byte" name="valid"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SearchPHON">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:short" name="Amt"/>
+                    <xs:attribute type="xs:byte" name="Ein"/>
+                    <xs:attribute type="xs:string" name="Kanton"/>
+                    <xs:attribute type="xs:byte" name="RF"/>
+                    <xs:attribute type="xs:short" name="SitzNr"/>
+                    <xs:attribute type="xs:byte" name="valid"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SearchSitz">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:short" name="SitzNr" use="optional"/>
+                    <xs:attribute type="xs:byte" name="valid" use="optional"/>
+                    <xs:attribute type="xs:short" name="Amt" use="optional"/>
+                    <xs:attribute type="xs:string" name="Kanton" use="optional"/>
+                    <xs:attribute type="xs:byte" name="RF" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Found">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="FirmaSort"/>
+                <xs:element ref="Hauptfassung"/>
+                <xs:element ref="Sitz"/>
+                <xs:element ref="Link"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="Amt"/>
+            <xs:attribute type="xs:string" name="CHNR"/>
+            <xs:attribute type="xs:byte" name="Ein"/>
+            <xs:attribute type="xs:string" name="Kanton"/>
+            <xs:attribute type="xs:byte" name="RF"/>
+            <xs:attribute type="xs:byte" name="valid"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ID13" type="xs:string"/>
+    <xs:element name="nextRef" type="xs:byte"/>
+    <xs:element name="rf" type="xs:byte"/>
+    <xs:element name="Eintrag" type="xs:date"/>
+    <xs:element name="UebertragVon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ID13"/>
+                <xs:element ref="Link"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="AmtNr"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="FruehereFnr">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ID13"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="AmtNr"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TBtext" type="xs:string"/>
+    <xs:element name="SHABtext" type="xs:string"/>
+    <xs:element name="Kanton" type="xs:string"/>
+    <xs:element name="Visum" type="xs:string"/>
+    <xs:element name="TB">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="TBtext" minOccurs="0"/>
+                <xs:element ref="TBnr" minOccurs="0"/>
+                <xs:element ref="Datum" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SHAB">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="SHABtext" minOccurs="0"/>
+                <xs:element ref="SHABnr" minOccurs="0"/>
+                <xs:element ref="Datum" minOccurs="0"/>
+                <xs:element ref="Seite" minOccurs="0"/>
+                <xs:element ref="PublNr" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SHABnr" type="xs:short"/>
+    <xs:element name="Datum" type="xs:date"/>
+    <xs:element name="Seite" type="xs:short"/>
+    <xs:element name="Zitat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Kanton" minOccurs="0"/>
+                <xs:element ref="Visum"/>
+                <xs:element ref="MutFlags" minOccurs="0"/>
+                <xs:element ref="TB"/>
+                <xs:element ref="SHAB"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+            <xs:attribute type="xs:byte" name="loe" use="optional"/>
+            <xs:attribute type="xs:byte" name="mut" use="optional"/>
+            <xs:attribute type="xs:byte" name="seq" use="optional"/>
+            <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Bez">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:short" name="SitzNr" use="optional"/>
+                    <xs:attribute type="xs:byte" name="fldID" use="optional"/>
+                    <xs:attribute type="xs:string" name="fldType" use="optional"/>
+                    <xs:attribute type="xs:byte" name="loe" use="optional"/>
+                    <xs:attribute type="xs:byte" name="mut" use="optional"/>
+                    <xs:attribute type="xs:byte" name="seq" use="optional"/>
+                    <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+                    <xs:attribute type="xs:byte" name="valid" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="co" type="xs:string"/>
+    <xs:element name="Strasse">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="NrWidth" use="optional"/>
+                    <xs:attribute type="xs:short" name="nr" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Zusatz" type="xs:string"/>
+    <xs:element name="PLZ" type="xs:short"/>
+    <xs:element name="Ort" type="xs:string"/>
+    <xs:element name="Land" type="xs:string"/>
+    <xs:element name="fullText" type="xs:string"/>
+    <xs:element name="Adr">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="co"/>
+                <xs:element ref="Strasse"/>
+                <xs:element ref="Zusatz"/>
+                <xs:element ref="PLZ"/>
+                <xs:element ref="Ort"/>
+                <xs:element ref="Land"/>
+                <xs:element ref="fullText"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="adrID" use="optional"/>
+            <xs:attribute type="xs:string" name="adrType" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Adresse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Adr"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+            <xs:attribute type="xs:byte" name="loe" use="optional"/>
+            <xs:attribute type="xs:byte" name="mut" use="optional"/>
+            <xs:attribute type="xs:short" name="seq" use="optional"/>
+            <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Zweck">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:byte" name="fldID" use="optional"/>
+                    <xs:attribute type="xs:byte" name="loe" use="optional"/>
+                    <xs:attribute type="xs:byte" name="mut" use="optional"/>
+                    <xs:attribute type="xs:byte" name="seq" use="optional"/>
+                    <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+                    <xs:attribute type="xs:byte" name="valid" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="HRbem">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:short" name="fldID" use="optional"/>
+                    <xs:attribute type="xs:string" name="fldType" use="optional"/>
+                    <xs:attribute type="xs:byte" name="loe" use="optional"/>
+                    <xs:attribute type="xs:byte" name="mut" use="optional"/>
+                    <xs:attribute type="xs:byte" name="seq" use="optional"/>
+                    <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+                    <xs:attribute type="xs:byte" name="valid" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Statut">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Datum"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+            <xs:attribute type="xs:short" name="fldID" use="optional"/>
+            <xs:attribute type="xs:byte" name="loe" use="optional"/>
+            <xs:attribute type="xs:byte" name="mut" use="optional"/>
+            <xs:attribute type="xs:byte" name="seq" use="optional"/>
+            <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Name">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Publ" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Vorname">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Publ" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Titel" type="xs:string"/>
+    <xs:element name="Heimat">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:short" name="BFS" use="optional"/>
+                    <xs:attribute type="xs:string" name="Land" use="optional"/>
+                    <xs:attribute type="xs:string" name="adj" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="WohnOrt">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:short" name="PLZ" use="optional"/>
+                    <xs:attribute type="xs:string" name="Land" use="optional"/>
+                    <xs:attribute type="xs:short" name="SitzBFS" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="PersDaten" type="xs:string"/>
+    <xs:element name="sign" type="xs:string"/>
+    <xs:element name="signKurz" type="xs:string"/>
+    <xs:element name="func" type="xs:string"/>
+    <xs:element name="kurz" type="xs:string"/>
+    <xs:element name="ZB">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sign"/>
+                <xs:element ref="signKurz"/>
+                <xs:element ref="extra" minOccurs="0"/>
+                <xs:element ref="extraKurz" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="ZartNr" use="optional"/>
+            <xs:attribute type="xs:byte" name="ExtraNr" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Fkt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="func"/>
+                <xs:element ref="kurz"/>
+                <xs:element ref="ZB" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="FunkNr" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+            <xs:attribute type="xs:short" name="oldF" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Personalien">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name"/>
+                <xs:element ref="BirthName" minOccurs="0"/>
+                <xs:element ref="Alias" minOccurs="0"/>
+                <xs:element ref="Vorname" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="Titel" minOccurs="0"/>
+                <xs:element ref="GeburtsDatum" minOccurs="0"/>
+                <xs:element ref="Heimat" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="WohnOrt"/>
+                <xs:element ref="Ausweis" minOccurs="0"/>
+                <xs:element ref="PersDaten"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="Sexe" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+            <xs:attribute type="xs:string" name="PersID" use="optional"/>
+            <xs:attribute type="xs:string" name="PersNr" use="optional"/>
+            <xs:attribute type="xs:byte" name="PersExtra" use="optional"/>
+            <xs:attribute type="xs:string" name="CHNR" use="optional"/>
+            <xs:attribute type="xs:string" name="UID" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Funktion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Fkt" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RefCancel">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+                    <xs:attribute type="xs:byte" name="seq" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="GeburtsDatum" nillable="true" type="xs:string"/>
+    <xs:element name="extra" type="xs:string"/>
+    <xs:element name="extraKurz" type="xs:string"/>
+    <xs:element name="Summe">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:byte">
+                    <xs:attribute type="xs:byte" name="Anzahl" use="optional"/>
+                    <xs:attribute type="xs:byte" name="Betrag" use="optional"/>
+                    <xs:attribute type="xs:byte" name="Typ" use="optional"/>
+                    <xs:attribute type="xs:string" name="Vorrechte" use="optional"/>
+                    <xs:attribute type="xs:string" name="Waehrung" use="optional"/>
+                    <xs:attribute type="xs:byte" name="Wert" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Garantie">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Summe"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="BirthName">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Publ" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Alias">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="Publ" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Ausweis">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="Land" use="optional"/>
+                    <xs:attribute type="xs:string" name="Typ" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="PersModif" type="xs:string"/>
+    <xs:element name="Person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="RefCancel" minOccurs="0"/>
+                <xs:element ref="Personalien"/>
+                <xs:element ref="Funktion"/>
+                <xs:element ref="Garantie" minOccurs="0"/>
+                <xs:element ref="PersModif" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="Ein" use="optional"/>
+            <xs:attribute type="xs:byte" name="loe" use="optional"/>
+            <xs:attribute type="xs:byte" name="mut" use="optional"/>
+            <xs:attribute type="xs:byte" name="seq" use="optional"/>
+            <xs:attribute type="xs:byte" name="toCheck" use="optional"/>
+            <xs:attribute type="xs:byte" name="valid" use="optional"/>
+            <xs:attribute type="xs:byte" name="Aenderung" use="optional"/>
+            <xs:attribute type="xs:byte" name="justModified" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Modif" type="xs:string"/>
+    <xs:element name="Log">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Modif"/>
+            </xs:sequence>
+            <xs:attribute type="xs:date" name="Dat" use="optional"/>
+            <xs:attribute type="xs:int" name="LogType" use="optional"/>
+            <xs:attribute type="xs:string" name="Start" use="optional"/>
+            <xs:attribute type="xs:string" name="Stop" use="optional"/>
+            <xs:attribute type="xs:string" name="Vis" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Search">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element ref="Publ" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="SearchAIM"/>
+                <xs:element ref="SearchPHON"/>
+                <xs:element ref="SearchSitz"/>
+                <xs:element ref="Found"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Kopf">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nextRef"/>
+                <xs:element ref="rf"/>
+                <xs:element ref="Eintrag"/>
+                <xs:element ref="UebertragVon"/>
+                <xs:element ref="FruehereFnr"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Zitate">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Zitat" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Sitze">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Sitz"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Firma">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Bez" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Adressen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Adresse" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Zwecke">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Zweck" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Bemerkungen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="HRbem" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Statuten">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Statut" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Personal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Person" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Logs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Log" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Extract">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Search"/>
+                <xs:element ref="Kopf"/>
+                <xs:element ref="Zitate"/>
+                <xs:element ref="Sitze"/>
+                <xs:element ref="Firma"/>
+                <xs:element ref="Adressen"/>
+                <xs:element ref="Zwecke"/>
+                <xs:element ref="Bemerkungen"/>
+                <xs:element ref="Statuten"/>
+                <xs:element ref="Personal"/>
+                <xs:element ref="Logs"/>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="Amt"/>
+            <xs:attribute type="xs:string" name="CHNR"/>
+            <xs:attribute type="xs:string" name="Kanton"/>
+            <xs:attribute type="xs:byte" name="Lang"/>
+            <xs:attribute type="xs:byte" name="RF"/>
+            <xs:attribute type="xs:dateTime" name="Stempel"/>
+            <xs:attribute type="xs:string" name="UID"/>
+            <xs:attribute type="xs:byte" name="Valid"/>
+            <xs:attribute type="xs:byte" name="Version"/>
+            <xs:attribute type="xs:string" name="Visum"/>
+            <xs:attribute type="xs:dateTime" name="checkedDat"/>
+            <xs:attribute type="xs:string" name="checkedVis"/>
+            <xs:attribute type="xs:byte" name="inBearb"/>
+            <xs:attribute type="xs:date" name="lastTB"/>
+            <xs:attribute type="xs:int" name="noga"/>
+            <xs:attribute type="xs:byte" name="offenesGVZ"/>
+            <xs:attribute type="xs:string" name="suffix"/>
+            <xs:attribute type="xs:byte" name="toCheck"/>
+            <xs:attribute type="xs:byte" name="validOnly"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ExtractList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Extract"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
