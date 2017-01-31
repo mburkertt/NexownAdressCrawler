@@ -99,7 +99,7 @@ public class AdressGrapperServiceImpl {
         ObjectMapper mapper = new ObjectMapper();
         //Object to JSON in file
         try {
-            if (address.getCompanyName() != "No Company with this CHID") {
+            if (address.getCompanyName() != "No Company with this CHID" && address.getOwner() != "Kanton service not implemented yet") {
                 String path = new File("src\\main\\resources\\json\\" + address.getId() + ".json").getAbsolutePath();
                 mapper.writeValue(new File(path), address);
                 LOG.info("File {} was Written in Folder ", address);
