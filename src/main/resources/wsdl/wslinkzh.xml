@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<excerpt xsi:noNamespaceSchemaLocation="http://ch.powernet.ch/schema/excerpt_0999b.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hr="http://ch.powernet.ch/schema/">
+  <envelope lang="de">
+    <schemaVersion>0999b</schemaVersion>
+    <officeID>20</officeID>
+    <officeName>Handelsregister des Kantons Zürich</officeName>
+    <creationDate>2017-01-30T12:08:44</creationDate>
+    <validityDate>2013-01-11</validityDate>
+  </envelope>
+  <instances>
+    <instance CHNum="CH-020.4.059.911-1">
+      <heading lang="de">
+        <identification officeID="20">
+          <CHNum>CH-020.4.059.911-1</CHNum>
+          <UID>CHE-467.078.612</UID>
+        </identification>
+        <canton>ZH</canton>
+        <entityStatus>1</entityStatus>
+        <legalForm>4</legalForm>
+        <legalFormText>Ges. mit beschränkter Haftung (GmbH)</legalFormText>
+        <inscriptionDate>2016-11-04</inscriptionDate>
+        <hr:lastRef>2</hr:lastRef>
+      </heading>
+      <citations>
+        <citation ref="1">
+          <canton>ZH</canton>
+          <diary>
+            <entryNr>39390</entryNr>
+            <date>2016-11-04</date>
+          </diary>
+          <SHAB>
+            <shabNum>218</shabNum>
+            <page>0</page>
+            <pubNum>3151623</pubNum>
+            <date>2016-11-09</date>
+          </SHAB>
+          <hr:mutFlags>0010000000000100000000000000000000000000000000000</hr:mutFlags>
+          <hr:visum>ZH</hr:visum>
+        </citation>
+      </citations>
+      <rubrics>
+        <seats>
+          <seat status="1" ins="1" mut="0" del="0">
+            <seatText>Zürich</seatText>
+            <bfsNum>261</bfsNum>
+            <hr:bfs>261</hr:bfs>
+          </seat>
+        </seats>
+        <names>
+          <name>
+            <native ins="1" status="1" mut="0" del="0">NexMarket GmbH</native>
+          </name>
+        </names>
+        <addresses>
+          <address status="1" ins="1" mut="0" del="0" kind="seat">
+            <addressText>Dreikönigstrasse 31, 8002 Zürich</addressText>
+            <addressDetails>
+              <street>Dreikönigstrasse</street>
+              <buildingNum>31</buildingNum>
+              <streetAddOn>
+              </streetAddOn>
+              <zip>8002</zip>
+              <city>Zürich</city>
+            </addressDetails>
+          </address>
+        </addresses>
+        <purposes>
+          <purpose status="1" ins="1" mut="0" del="0">Die Gesellschaft bezweckt das Angebot von Dienstleistungen im Bereich Digital Marketing. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.</purpose>
+        </purposes>
+        <topics>
+          <topic status="1" ins="1" mut="0" del="0" topicCode="190">SHAB</topic>
+          <topic status="1" ins="1" mut="0" del="0" topicCode="126">Die Mitteilungen der Geschäftsführung an die Gesellschafter erfolgen per Brief, E-Mail oder Telefax.</topic>
+          <topic status="1" ins="1" mut="0" del="0" topicCode="127">Gemäss Erklärung vom 02.11.2016 wurde auf die eingeschränkte Revision verzichtet.</topic>
+        </topics>
+        <capital>
+          <capitalItem status="1" ins="1" mut="0" del="0" capitalCode="1" currency="CHF">
+            <capitalAmount status="1">20000</capitalAmount>
+          </capitalItem>
+        </capital>
+        <bylaws>
+          <bylaw status="1" ins="1" mut="0" del="0">
+            <date>2016-11-02</date>
+          </bylaw>
+        </bylaws>
+        <persons>
+          <person status="1" ins="1" seq="1">
+            <particulars personKind="1">
+              <name>Erni</name>
+              <mrMrs>2</mrMrs>
+              <firstName>Daniel Niklaus</firstName>
+              <origins>
+                <origin>
+                  <city>Dagmersellen</city>
+                  <bfsNum>1125</bfsNum>
+                </origin>
+              </origins>
+              <residence>
+                <city>Küssnacht SZ</city>
+                <zip>6402</zip>
+                <bfsNum>1331</bfsNum>
+              </residence>
+              <personText>Erni, Daniel Niklaus, von Dagmersellen, in Küssnacht SZ</personText>
+            </particulars>
+            <functions>
+              <function>
+                <funcCode>616</funcCode>
+                <funcText>Gesellschafter und Vorsitzender der Geschäftsführung</funcText>
+                <authorisation>
+                  <authCode>902</authCode>
+                  <authText>Einzelunterschrift</authText>
+                  <hr:signShort>Einzelunterschrift</hr:signShort>
+                </authorisation>
+                <hr:funcShort>GS und Vorsitzender der GF</hr:funcShort>
+              </function>
+            </functions>
+            <warranties>
+              <warranty>
+                <warrantyCode>4</warrantyCode>
+                <warrantyText>19000</warrantyText>
+                <amount>19000</amount>
+                <quantity>190</quantity>
+                <value>100</value>
+                <currency>CHF</currency>
+              </warranty>
+            </warranties>
+          </person>
+          <person status="1" ins="1" seq="2">
+            <particulars personKind="1">
+              <name>Akyol</name>
+              <mrMrs>2</mrMrs>
+              <firstName>Selim</firstName>
+              <origins>
+                <origin>
+                  <city>Ammerswil</city>
+                  <bfsNum>4191</bfsNum>
+                </origin>
+              </origins>
+              <residence>
+                <city>Volketswil</city>
+                <zip>8307</zip>
+                <bfsNum>199</bfsNum>
+              </residence>
+              <personText>Akyol, Selim, von Ammerswil, in Volketswil</personText>
+            </particulars>
+            <functions>
+              <function>
+                <funcCode>606</funcCode>
+                <funcText>Gesellschafter und Geschäftsführer</funcText>
+                <authorisation>
+                  <authCode>920</authCode>
+                  <authText>Kollektivunterschrift zu zweien</authText>
+                  <hr:signShort>KU zu zweien</hr:signShort>
+                </authorisation>
+                <hr:funcShort>GS und GF</hr:funcShort>
+              </function>
+            </functions>
+            <warranties>
+              <warranty>
+                <warrantyCode>4</warrantyCode>
+                <warrantyText>1000</warrantyText>
+                <amount>1000</amount>
+                <quantity>10</quantity>
+                <value>100</value>
+                <currency>CHF</currency>
+              </warranty>
+            </warranties>
+          </person>
+        </persons>
+      </rubrics>
+    </instance>
+  </instances>
+</excerpt>
