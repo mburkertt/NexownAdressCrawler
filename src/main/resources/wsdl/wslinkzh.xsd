@@ -1,0 +1,410 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="schemaVersion" type="xs:string"/>
+    <xs:element name="officeID" type="xs:byte"/>
+    <xs:element name="officeName" type="xs:string"/>
+    <xs:element name="creationDate" type="xs:dateTime"/>
+    <xs:element name="validityDate" type="xs:date"/>
+    <xs:element name="CHNum" type="xs:string"/>
+    <xs:element name="UID" type="xs:string"/>
+    <xs:element name="identification">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="CHNum"/>
+                <xs:element ref="UID"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="officeID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="canton" type="xs:string"/>
+    <xs:element name="entityStatus" type="xs:byte"/>
+    <xs:element name="legalForm" type="xs:byte"/>
+    <xs:element name="legalFormText" type="xs:string"/>
+    <xs:element name="inscriptionDate" type="xs:date"/>
+    <xs:element name="entryNr" type="xs:int"/>
+    <xs:element name="date" type="xs:date"/>
+    <xs:element name="shabNum" type="xs:short"/>
+    <xs:element name="page" type="xs:byte"/>
+    <xs:element name="pubNum" type="xs:int"/>
+    <xs:element name="diary">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="entryNr"/>
+                <xs:element ref="date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SHAB">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="shabNum"/>
+                <xs:element ref="page"/>
+                <xs:element ref="pubNum"/>
+                <xs:element ref="date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="citation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="canton"/>
+                <xs:element ref="diary"/>
+                <xs:element ref="SHAB"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="ref"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="seatText" type="xs:string"/>
+    <xs:element name="bfsNum" type="xs:short"/>
+    <xs:element name="seat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="seatText"/>
+                <xs:element ref="bfsNum"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="status"/>
+            <xs:attribute type="xs:byte" name="ins"/>
+            <xs:attribute type="xs:byte" name="mut"/>
+            <xs:attribute type="xs:byte" name="del"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="native">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="ins"/>
+                    <xs:attribute type="xs:byte" name="status"/>
+                    <xs:attribute type="xs:byte" name="mut"/>
+                    <xs:attribute type="xs:byte" name="del"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="native" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="street" type="xs:string"/>
+    <xs:element name="buildingNum" type="xs:byte"/>
+    <xs:element name="streetAddOn" type="xs:string"/>
+    <xs:element name="zip" type="xs:short"/>
+    <xs:element name="city" type="xs:string"/>
+    <xs:element name="addressText" type="xs:string"/>
+    <xs:element name="addressDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="street"/>
+                <xs:element ref="buildingNum"/>
+                <xs:element ref="streetAddOn"/>
+                <xs:element ref="zip"/>
+                <xs:element ref="city"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="addressText"/>
+                <xs:element ref="addressDetails"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="status"/>
+            <xs:attribute type="xs:byte" name="ins"/>
+            <xs:attribute type="xs:byte" name="mut"/>
+            <xs:attribute type="xs:byte" name="del"/>
+            <xs:attribute type="xs:string" name="kind"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="purpose">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="status"/>
+                    <xs:attribute type="xs:byte" name="ins"/>
+                    <xs:attribute type="xs:byte" name="mut"/>
+                    <xs:attribute type="xs:byte" name="del"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="topic">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="status" use="optional"/>
+                    <xs:attribute type="xs:byte" name="ins" use="optional"/>
+                    <xs:attribute type="xs:byte" name="mut" use="optional"/>
+                    <xs:attribute type="xs:byte" name="del" use="optional"/>
+                    <xs:attribute type="xs:short" name="topicCode" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="capitalAmount">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:short">
+                    <xs:attribute type="xs:byte" name="status"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="capitalItem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="capitalAmount"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="status"/>
+            <xs:attribute type="xs:byte" name="ins"/>
+            <xs:attribute type="xs:byte" name="mut"/>
+            <xs:attribute type="xs:byte" name="del"/>
+            <xs:attribute type="xs:byte" name="capitalCode"/>
+            <xs:attribute type="xs:string" name="currency"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bylaw">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="date"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="status"/>
+            <xs:attribute type="xs:byte" name="ins"/>
+            <xs:attribute type="xs:byte" name="mut"/>
+            <xs:attribute type="xs:byte" name="del"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="origin">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city"/>
+                <xs:element ref="bfsNum"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mrMrs" type="xs:byte"/>
+    <xs:element name="firstName" type="xs:string"/>
+    <xs:element name="origins">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="origin"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="residence">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city"/>
+                <xs:element ref="zip"/>
+                <xs:element ref="bfsNum"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="personText" type="xs:string"/>
+    <xs:element name="authCode" type="xs:short"/>
+    <xs:element name="authText" type="xs:string"/>
+    <xs:element name="funcCode" type="xs:short"/>
+    <xs:element name="funcText" type="xs:string"/>
+    <xs:element name="authorisation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="authCode"/>
+                <xs:element ref="authText"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="function">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="funcCode"/>
+                <xs:element ref="funcText"/>
+                <xs:element ref="authorisation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="warrantyCode" type="xs:byte"/>
+    <xs:element name="warrantyText" type="xs:short"/>
+    <xs:element name="amount" type="xs:short"/>
+    <xs:element name="quantity" type="xs:short"/>
+    <xs:element name="value" type="xs:byte"/>
+    <xs:element name="currency" type="xs:string"/>
+    <xs:element name="warranty">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="warrantyCode"/>
+                <xs:element ref="warrantyText"/>
+                <xs:element ref="amount"/>
+                <xs:element ref="quantity"/>
+                <xs:element ref="value"/>
+                <xs:element ref="currency"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="particulars">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="mrMrs"/>
+                <xs:element ref="firstName"/>
+                <xs:element ref="origins"/>
+                <xs:element ref="residence"/>
+                <xs:element ref="personText"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="personKind" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="functions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="function"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="warranties">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="warranty"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="particulars"/>
+                <xs:element ref="functions"/>
+                <xs:element ref="warranties"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="status" use="optional"/>
+            <xs:attribute type="xs:byte" name="ins" use="optional"/>
+            <xs:attribute type="xs:byte" name="seq" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="seats">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="seat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="names">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="addresses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="address"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="purposes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="purpose"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="topics">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="topic" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="capital">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="capitalItem"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bylaws">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="bylaw"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="persons">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="person" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="heading">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="identification"/>
+                <xs:element ref="canton"/>
+                <xs:element ref="entityStatus"/>
+                <xs:element ref="legalForm"/>
+                <xs:element ref="legalFormText"/>
+                <xs:element ref="inscriptionDate"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="citations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="citation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rubrics">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="seats"/>
+                <xs:element ref="names"/>
+                <xs:element ref="addresses"/>
+                <xs:element ref="purposes"/>
+                <xs:element ref="topics"/>
+                <xs:element ref="capital"/>
+                <xs:element ref="bylaws"/>
+                <xs:element ref="persons"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="instance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="heading"/>
+                <xs:element ref="citations"/>
+                <xs:element ref="rubrics"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="CHNum"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="envelope">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="schemaVersion"/>
+                <xs:element ref="officeID"/>
+                <xs:element ref="officeName"/>
+                <xs:element ref="creationDate"/>
+                <xs:element ref="validityDate"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="instances">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="instance"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="excerpt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="envelope"/>
+                <xs:element ref="instances"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

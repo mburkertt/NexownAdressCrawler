@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excerpt xmlns:hr="http://ch.powernet.ch/schema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ch.powernet.ch/schema/excerpt_0999b.xsd">
+    <envelope lang="de">
+        <schemaVersion>0999b</schemaVersion>
+        <officeID>20</officeID>
+        <officeName>Handelsregister des Kantons Zürich</officeName>
+        <creationDate>2017-01-30T13:46:23</creationDate>
+        <validityDate>2013-01-11</validityDate>
+    </envelope>
+    <instances>
+        <instance CHNum="CH-020.9.003.006-4">
+            <heading lang="de">
+                <identification officeID="20">
+                    <CHNum>CH-020.9.003.006-4</CHNum>
+                    <UID>CHE-151.327.050</UID>
+                </identification>
+                <canton>ZH</canton>
+                <entityStatus>1</entityStatus>
+                <legalForm>9</legalForm>
+                <legalFormText>Zweigniederlassung</legalFormText>
+                <inscriptionDate>2009-03-05</inscriptionDate>
+                <hr:lastRef>11</hr:lastRef>
+            </heading>
+            <citations>
+                <citation ref="1">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>8824</entryNr>
+                        <date>2009-03-05</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>48</shabNum>
+                        <page>23</page>
+                        <pubNum>4920298</pubNum>
+                        <date>2009-03-11</date>
+                    </SHAB>
+                    <hr:mutFlags>0010000000000000000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="2">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>15751</entryNr>
+                        <date>2009-04-29</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>85</shabNum>
+                        <page>31</page>
+                        <pubNum>5003008</pubNum>
+                        <date>2009-05-05</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="3">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>44049</entryNr>
+                        <date>2009-11-11</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>223</shabNum>
+                        <page>24</page>
+                        <pubNum>5346322</pubNum>
+                        <date>2009-11-17</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="4">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>20545</entryNr>
+                        <date>2010-06-03</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>109</shabNum>
+                        <page>17</page>
+                        <pubNum>5667142</pubNum>
+                        <date>2010-06-09</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="5">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>11328</entryNr>
+                        <date>2011-03-23</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>61</shabNum>
+                        <page>0</page>
+                        <pubNum>6094840</pubNum>
+                        <date>2011-03-28</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="6">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>14287</entryNr>
+                        <date>2012-04-26</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>84</shabNum>
+                        <page>0</page>
+                        <pubNum>6660978</pubNum>
+                        <date>2012-05-01</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="7">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>3818</entryNr>
+                        <date>2013-02-01</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>25</shabNum>
+                        <page>0</page>
+                        <pubNum>7051322</pubNum>
+                        <date>2013-02-06</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="8">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>30922</entryNr>
+                        <date>2013-09-30</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>191</shabNum>
+                        <page>0</page>
+                        <pubNum>1107345</pubNum>
+                        <date>2013-10-03</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000010100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="9">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>128</entryNr>
+                        <date>2014-01-06</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>5</shabNum>
+                        <page>0</page>
+                        <pubNum>1273739</pubNum>
+                        <date>2014-01-09</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+                <citation ref="10">
+                    <canton>ZH</canton>
+                    <diary>
+                        <entryNr>35247</entryNr>
+                        <date>2015-10-08</date>
+                    </diary>
+                    <SHAB>
+                        <shabNum>198</shabNum>
+                        <page>0</page>
+                        <pubNum>2423429</pubNum>
+                        <date>2015-10-13</date>
+                    </SHAB>
+                    <hr:mutFlags>0000000000000100000000000000000000000000000000000</hr:mutFlags>
+                    <hr:visum>ZH</hr:visum>
+                </citation>
+            </citations>
+            <rubrics>
+                <seats>
+                    <seat status="1" ins="1" mut="0" del="0">
+                        <seatText>Zürich</seatText>
+                        <bfsNum>261</bfsNum>
+                        <hr:bfs>261</hr:bfs>
+                    </seat>
+                </seats>
+                <names>
+                    <name>
+                        <native ins="1" status="1" mut="0" del="0">ERNI Consulting AG</native>
+                    </name>
+                </names>
+                <addresses>
+                    <address status="0" ins="1" mut="0" del="8" kind="seat">
+                        <addressText>Talstrasse 82, 8001 Zürich</addressText>
+                        <addressDetails>
+                            <street>Talstrasse</street>
+                            <buildingNum>82</buildingNum>
+                            <streetAddOn />
+                            <zip>8001</zip>
+                            <city>Zürich</city>
+                        </addressDetails>
+                    </address>
+                    <address status="1" ins="8" mut="0" del="0" kind="seat">
+                        <addressText>Thurgauerstrasse 40, 8050 Zürich</addressText>
+                        <addressDetails>
+                            <street>Thurgauerstrasse</street>
+                            <buildingNum>40</buildingNum>
+                            <streetAddOn />
+                            <zip>8050</zip>
+                            <city>Zürich</city>
+                        </addressDetails>
+                    </address>
+                </addresses>
+                <purposes />
+                <HQinfos>
+                    <HQinfo>
+                        <HQtext status="1" ins="1" mut="0" del="0" infoCode="137">Identifikationsnummer Hauptsitz: CH-170.3.032.307-4</HQtext>
+                    </HQinfo>
+                    <HQinfo>
+                        <HQtext status="1" ins="1" mut="0" del="0" infoCode="140">Firma Hauptsitz: Erni Consulting AG</HQtext>
+                    </HQinfo>
+                    <HQinfo>
+                        <HQtext status="1" ins="1" mut="0" del="0" infoCode="141">Rechtsform Hauptsitz: Aktiengesellschaft</HQtext>
+                    </HQinfo>
+                    <HQinfo>
+                        <HQtext status="1" ins="1" mut="0" del="0" infoCode="142">Hauptsitz: Baar</HQtext>
+                    </HQinfo>
+                </HQinfos>
+                <persons>
+                    <person status="0" ins="1" mut="0" del="4" seq="1">
+                        <particulars personKind="1">
+                            <name>Blank</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Markus</firstName>
+                            <origins>
+                                <origin>
+                                    <country>AT</country>
+                                    <phrase>österreichischer Staatsangehöriger</phrase>
+                                    <hr:adjective />
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Horgen</city>
+                                <zip>8135</zip>
+                                <bfsNum>133</bfsNum>
+                            </residence>
+                            <personText>Blank, Markus, österreichischer Staatsangehöriger, in Horgen</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="1" mut="0" del="10" seq="2">
+                        <particulars personKind="1">
+                            <name>Duméril</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Jean-Christophe</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Meilen</city>
+                                    <bfsNum>156</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Zürich</city>
+                                <zip>8000</zip>
+                                <bfsNum>261</bfsNum>
+                            </residence>
+                            <personText>Duméril, Jean-Christophe, von Meilen, in Zürich</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="1" mut="0" del="5" seq="3">
+                        <particulars personKind="1">
+                            <name>Gayret</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Alain</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Bern</city>
+                                    <bfsNum>351</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Niederhasli</city>
+                                <zip>8155</zip>
+                                <bfsNum>90</bfsNum>
+                            </residence>
+                            <personText>Gayret, Alain, von Bern, in Niederhasli</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="1" mut="0" del="4" seq="4">
+                        <particulars personKind="1">
+                            <name>Kaiser</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Christian</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Gams</city>
+                                    <bfsNum>3272</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Zürich</city>
+                                <zip>8000</zip>
+                                <bfsNum>261</bfsNum>
+                            </residence>
+                            <personText>Kaiser, Christian, von Gams, in Zürich</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="1" ins="1" seq="5">
+                        <particulars personKind="1">
+                            <name>Schlatter</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Heinz</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Otelfingen</city>
+                                    <bfsNum>94</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Otelfingen</city>
+                                <zip>8112</zip>
+                                <bfsNum>94</bfsNum>
+                            </residence>
+                            <personText>Schlatter, Heinz, von Otelfingen, in Otelfingen</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="1" mut="0" del="4" seq="6">
+                        <particulars personKind="1">
+                            <name>Tschudi</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Reto</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Schwanden GL</city>
+                                    <bfsNum>1627</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Zofingen</city>
+                                <zip>4800</zip>
+                                <bfsNum>4289</bfsNum>
+                            </residence>
+                            <personText>Tschudi, Reto, von Schwanden GL, in Zofingen</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="1" ins="1" seq="7">
+                        <particulars personKind="1">
+                            <name>Zumbühl</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Reto</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Oberdorf NW</city>
+                                    <bfsNum>1508</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Küssnacht SZ</city>
+                                <zip>0</zip>
+                                <bfsNum>0</bfsNum>
+                            </residence>
+                            <personText>Zumbühl, Reto, von Oberdorf NW, in Küssnacht SZ</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="2" mut="0" del="3" seq="1">
+                        <particulars personKind="1">
+                            <name>Rüegg</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Heinrich</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Rapperswil-Jona</city>
+                                    <bfsNum>3340</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Rapperswil-Jona</city>
+                                <zip>8640</zip>
+                                <bfsNum>3340</bfsNum>
+                            </residence>
+                            <personText>Rüegg, Heinrich, von Rapperswil-Jona, in Rapperswil-Jona</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="4" mut="0" del="9" seq="1">
+                        <particulars personKind="1">
+                            <name>Weber</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Stefan</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Eschenz</city>
+                                    <bfsNum>4806</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Schübelbach</city>
+                                <zip>8854</zip>
+                                <bfsNum>1346</bfsNum>
+                            </residence>
+                            <personText>Weber, Stefan, von Eschenz, in Schübelbach</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="5" mut="0" del="7" seq="1">
+                        <particulars personKind="1">
+                            <name>Kaiser</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Michael</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Magden</city>
+                                    <bfsNum>4253</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Rheinfelden</city>
+                                <zip>4310</zip>
+                                <bfsNum>4258</bfsNum>
+                            </residence>
+                            <personText>Kaiser, Michael, von Magden, in Rheinfelden</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="6" mut="0" del="7" seq="1">
+                        <particulars personKind="1">
+                            <name>Waldispühl</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Armin</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Emmen</city>
+                                    <bfsNum>1024</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Buchrain</city>
+                                <zip>6030</zip>
+                                <bfsNum>1052</bfsNum>
+                            </residence>
+                            <personText>Waldispühl, Armin, von Emmen, in Buchrain</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="7" mut="0" del="9" seq="1">
+                        <particulars personKind="1">
+                            <name>Bigler</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Thomas</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Rüttenen</city>
+                                    <bfsNum>2555</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Dällikon</city>
+                                <zip>8108</zip>
+                                <bfsNum>84</bfsNum>
+                            </residence>
+                            <personText>Bigler, Thomas, von Rüttenen, in Dällikon</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                    <person status="0" ins="7" mut="0" del="8" seq="2">
+                        <particulars personKind="1">
+                            <name>Escher</name>
+                            <mrMrs>2</mrMrs>
+                            <firstName>Cédric</firstName>
+                            <origins>
+                                <origin>
+                                    <city>Basel</city>
+                                    <bfsNum>2701</bfsNum>
+                                </origin>
+                            </origins>
+                            <residence>
+                                <city>Zürich</city>
+                                <zip>8001</zip>
+                                <bfsNum>261</bfsNum>
+                            </residence>
+                            <personText>Escher, Cédric, von Basel, in Zürich</personText>
+                        </particulars>
+                        <functions>
+                            <function>
+                                <funcCode>898</funcCode>
+                                <funcText />
+                                <authorisation>
+                                    <authCode>962</authCode>
+                                    <authText>Kollektivprokura zu zweien</authText>
+                                    <hr:signShort>KP zu zweien</hr:signShort>
+                                </authorisation>
+                                <hr:funcShort />
+                            </function>
+                        </functions>
+                    </person>
+                </persons>
+            </rubrics>
+        </instance>
+    </instances>
+</excerpt>
+

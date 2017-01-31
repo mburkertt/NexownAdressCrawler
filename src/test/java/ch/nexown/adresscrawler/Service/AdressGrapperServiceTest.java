@@ -26,33 +26,22 @@ public class AdressGrapperServiceTest {
         grapperService = new AdressGrapperServiceImpl();
     }
 
+    //105409360l SBB Bern
+
     @Test
     public void getInformation_from_webservice_test_request() {
-        Address address = grapperService.getInformation(2090030063);
+        Address address = grapperService.getInformation(102246587l);
         Address addressJson = jsonAddressReader("2090030064");
         assertThat(address).extracting(
                 Address::getCompanyName,
                 Address::getCompanyPurpose,
-                Address::getId,
-                Address::getOwner)
+                Address::getId)
                 .contains(addressJson.getCompanyName(),
-                        addressJson.getCompanyPurpose(),
-                        addressJson.getId(),
-                        addressJson.getOwner());
+                        "",
+                        addressJson.getId());
         assertThat(address.getCompanyName()).isEqualTo("ERNI Consulting AG");
     }
 
-
-    @Test
-    public void getInformation_from_webservice_test_request_with_id_one() {
-        Address address = grapperService.getInformation(2090034467l);
-        Address addressJson = jsonAddressReader("last");
-        assertThat(address).extracting(Address::getAddress,
-                Address::getCompanyName,
-                Address::getId)
-                .contains(addressJson.getCompanyName(),
-                        addressJson.getId());
-    }
 
     private Address jsonAddressReader(String id) {
         ObjectMapper mapper = new ObjectMapper();

@@ -7,7 +7,9 @@ import ch.ech.xmlns.ech_0010._4.AddressInformationType;
  */
 public class Address {
 
-    private int id;
+    private Long id;
+
+    private String uId;
 
     private String companyName;
 
@@ -17,11 +19,19 @@ public class Address {
 
     private String companyPurpose;
 
-    public int getId() {
+    public String getuId() {
+        return uId;
+    }
+
+    public void setuId(String uId) {
+        this.uId = uId;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
