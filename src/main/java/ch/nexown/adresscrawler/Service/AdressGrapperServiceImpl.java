@@ -350,7 +350,6 @@ public class AdressGrapperServiceImpl {
         StringReader reader = new StringReader(xmlString);
         Source xmlInput = new StreamSource(new StringReader(xmlString));
         try {
-            Schema schema = jaxbUnmarshaller.getSchema();
             objectFactory = (Excerpt) jaxbUnmarshaller.unmarshal(xmlInput);
         } catch (JAXBException e1) {
             LOG.error("Binding failed: {}", e1);
