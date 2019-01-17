@@ -1,4 +1,4 @@
-package ch.nexown.adresscrawler.Configuration;
+package ch.nexown.adresscrawler.configuration;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.scheduling.annotation.EnableScheduling;

@@ -1,4 +1,4 @@
-package ch.nexown.adresscrawler.Model;
+package ch.nexown.adresscrawler.model;
 
 /**
  * Created by buma on 31.01.2017.

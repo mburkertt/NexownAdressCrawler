@@ -1,4 +1,4 @@
-package ch.nexown.adresscrawler.Model;
+package ch.nexown.adresscrawler.model;
 
 import ch.ech.xmlns.ech_0010._4.AddressInformationType;
 

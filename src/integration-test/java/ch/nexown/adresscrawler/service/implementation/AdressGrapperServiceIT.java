@@ -1,11 +1,15 @@
-package ch.nexown.adresscrawler.Service;
+package ch.nexown.adresscrawler.service.implementation;
 
-import ch.nexown.adresscrawler.Model.Address;
+import ch.admin.e_service.zefix._2015_06_26.ZefixService;
+import ch.nexown.adresscrawler.model.Address;
+import ch.nexown.adresscrawler.service.FileWriterService;
+import ch.nexown.adresscrawler.service.implementation.AdressGrapperServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,16 +21,17 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 
 @RunWith(MockitoJUnitRunner.class)
-public class AdressGrapperServiceTest {
+public class AdressGrapperServiceIT {
 
     private AdressGrapperServiceImpl grapperService;
 
+    @Autowired
+    private FileWriterService writerService;
+
     @Before
     public void setUp() {
-        grapperService = new AdressGrapperServiceImpl();
+        grapperService = new AdressGrapperServiceImpl(writerService);
     }
-
-    //105409360l SBB Bern
 
 
     @Test
@@ -42,7 +47,7 @@ public class AdressGrapperServiceTest {
                         addressJson.getCompanyPurpose(),
                         addressJson.getOwner(),
                         addressJson.getId());
-        assertThat(address.getCompanyName()).isEqualTo("ERNI Consulting AG");
+        assertThat(address.getCompanyName()).isEqualTo("ERNI Schweiz AG");
     }
 
     @Test

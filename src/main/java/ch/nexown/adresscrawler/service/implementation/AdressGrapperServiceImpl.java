@@ -1,9 +1,11 @@
-package ch.nexown.adresscrawler.Service;
+package ch.nexown.adresscrawler.service.implementation;
 
 import ch.admin.e_service.zefix._2015_06_26.*;
 import ch.ech.xmlns.ech_0010._4.AddressInformationType;
-import ch.nexown.adresscrawler.Model.Address;
-import ch.nexown.adresscrawler.Model.LegalSeat;
+import ch.nexown.adresscrawler.model.Address;
+import ch.nexown.adresscrawler.model.LegalSeat;
+import ch.nexown.adresscrawler.service.AdressGrapperService;
+import ch.nexown.adresscrawler.service.FileWriterService;
 import ch.nexown.adresscrawler.xml.workflow.ba.Extract;
 import ch.nexown.adresscrawler.xml.workflow.ba.ExtractList;
 import ch.nexown.adresscrawler.xml.workflow.ba.Zweck;
@@ -20,11 +22,12 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.validation.Schema;
 import javax.xml.ws.BindingProvider;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -32,11 +35,41 @@ import java.util.List;
  * Created by buma on 26.01.2017.
  */
 @Service
-public class AdressGrapperServiceImpl {
+public class AdressGrapperServiceImpl implements AdressGrapperService {
+
+    private ZefixService zefixService = new ZefixService();
+    private FileWriterService writerService;
 
     private static final Logger LOG = LoggerFactory.getLogger(AdressGrapperServiceImpl.class);
-    private static final int TIMING = 6;
-    private ZefixService zefixService = new ZefixService();
+    private static final int TIMING = 1;
+    private static int csvwriteammount = 300;
+    private static final String ADDRESSESNAME = "Adresses";
+    private List<Address> adresses = new ArrayList<>();
+    private long nextChId;
+    private ZefixServicePortType port = zefixService.getZefixServicePort();
+
+    public AdressGrapperServiceImpl(FileWriterService writerService) {
+        this.writerService = writerService;
+        BindingProvider prov = (BindingProvider) port;
+        prov.getRequestContext().put(BindingProvider.USERNAME_PROPERTY, "selim.akyol@nexown.ch");
+        prov.getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, "z8rgvtFh");
+        adresses = writerService.readAddressesFromCSV(ADDRESSESNAME);
+    }
+
+    @Scheduled(fixedRate = TIMING)
+    public void webServiceCall() {
+        Address adress = getInformation(getLastId());
+        if (adress != null) {
+            adresses.add(adress);
+            LOG.info("Address added to list size is now: {}", adresses.size());
+        }
+        if (adresses.size() > csvwriteammount) {
+            writerService.writeToCSV(adresses, ADDRESSESNAME);
+            writerService.writeToJson(adresses, ADDRESSESNAME);
+            LOG.info("Addresses {} printed in csv", adresses.size());
+            csvwriteammount = csvwriteammount + 20;
+        }
+    }
 
     private static String getUrlSource(String url) throws IOException {
         URL yahoo = new URL(url);
@@ -53,30 +86,14 @@ public class AdressGrapperServiceImpl {
         return a.toString();
     }
 
-    @Scheduled(fixedRate = TIMING)
-    public void webServiceCall() {
-        LOG.info("Start crawling");
-        getInformation(getLastId());
-        LOG.info("End Process");
-    }
-
     Address getInformation(Long id) {
-        long nextChId = id + 1;
-        ZefixServicePortType port = zefixService.getZefixServicePort();
-
-        BindingProvider prov = (BindingProvider) port;
-        prov.getRequestContext().put(BindingProvider.USERNAME_PROPERTY, "selim.akyol@nexown.ch");
-        prov.getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, "z8rgvtFh");
+        nextChId = id + 1;
         GetByUidRequestType getByUidRequestType = new GetByUidRequestType();
         getByUidRequestType.setUid(Math.toIntExact(id));
         DetailledResponseType result = port.getByUidDetailled(getByUidRequestType);
         Address address;
         if (result.getErrors() != null || result.getResult().getCompanyInfo().size() == 0) {
-            Address defaultAddress = new Address();
-            defaultAddress.setId(nextChId);
-            defaultAddress.setCompanyName("No Company with this CHID");
-            writeJson(defaultAddress);
-            return defaultAddress;
+            return null;
         } else {
             address = getAddressesOutOfCompanyInfo(result.getResult().getCompanyInfo(), nextChId);
             return address;
@@ -85,30 +102,17 @@ public class AdressGrapperServiceImpl {
 
     private Long getLastId() {
         ObjectMapper mapper = new ObjectMapper();
-        String pathLast = new File("src\\main\\resources\\json\\last.json").getAbsolutePath();
-        Address address = new Address();
-        try {
-            address = mapper.readValue(new File(pathLast), Address.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return address.getId();
-    }
-
-    private void writeJson(Address address) {
-        ObjectMapper mapper = new ObjectMapper();
-        //Object to JSON in file
-        try {
-            if (address.getCompanyName() != "No Company with this CHID" && address.getOwner() != "Kanton service not implemented yet") {
-                String path = new File("src\\main\\resources\\json\\" + address.getId() + ".json").getAbsolutePath();
-                mapper.writeValue(new File(path), address);
-                LOG.info("File {} was Written in Folder ", address);
-            }
+        if (nextChId == 0) {
             String pathLast = new File("src\\main\\resources\\json\\last.json").getAbsolutePath();
-            mapper.writeValue(new File(pathLast), address);
-        } catch (IOException e) {
-            LOG.error("Error during json generation {}", e);
+            Address address = new Address();
+            try {
+                address = mapper.readValue(new File(pathLast), Address.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return address.getId();
         }
+        return nextChId;
     }
 
     private Address getAddressesOutOfCompanyInfo(List<CompanyDetailedInfoType> result, Long id) {
@@ -140,7 +144,7 @@ public class AdressGrapperServiceImpl {
             address.setCompanyName(companyDetailedInfoType.getName());
         }
         getOwnerAndPurposeDependingOnKanton(address, companyDetailedInfoType);
-        writeJson(address);
+        writerService.writeToJson(Collections.singletonList(address), ADDRESSESNAME);
         return address;
     }
 
